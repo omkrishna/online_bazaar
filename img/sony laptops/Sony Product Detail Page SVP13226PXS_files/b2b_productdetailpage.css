@@ -1,0 +1,208 @@
+/**
+ * Copyright (c) 2006-2007, Bill W. Scott
+ * All rights reserved.
+ * This work is licensed under the Creative Commons Attribution 2.5 License. To view a copy 
+ * of this license, visit http://creativecommons.org/licenses/by/2.5/ or send a letter to 
+ * Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+ * This work was created by Bill Scott (billwscott.com, looksgoodworkswell.com).
+ * Version 0.6.1 - 07.08.2007
+ */
+/**
+ * Standard Configuration. It is advised that this section NOT be modified as the
+ * carousel.js expects the behavior outlined below.
+ **/
+.carousel-component-small { 
+	position:relative;
+	overflow:hidden;   /* causes the clipping */
+	/*display:none;*/ /* component turns it on when first item is rendered */	
+}				
+.carousel-component-small ul.carousel-list { 
+	width:10000000px;
+	position:relative;
+	z-index:1; 
+}
+.carousel-component-small .carousel-list li { 
+	float:left;
+	list-style:none;
+	overflow:hidden;  
+}
+.carousel-component-small .carousel-clip-region { 
+	overflow:hidden; /* Secret to the clipping */
+	margin:0px auto;
+	position:relative; 
+}
+
+
+/* =Carousel start =VR */
+.carousel-component-small { 
+	width:410px !important;
+	position:absolute;
+	left:374px;
+	margin-top:15px;
+	background:transparent url('../images/global/bg_product_detail_carousel.gif') 50% 0 no-repeat;
+}				
+.carousel-component-small .carousel-clip-region { 
+	/*width:348px;*/
+	height:56px;
+	padding:11px 0 8px;
+}
+.product-detail .product-pricing .carousel-component-small .carousel-list li { 
+	width:87px;
+	padding:0px;
+}
+.carousel-component-small .carousel-list li img { 
+	margin:0px auto;
+}
+
+	.carousel-component-small .carousel-prev {
+		cursor:pointer;
+		left:0px;
+		position:absolute;
+		top:26px;
+		z-index:3;
+	}
+	.carousel-component-small .carousel-next {
+		cursor:pointer;
+		position:absolute;
+		right:0px;
+		top:26px;
+		z-index:3;
+	}
+	.carousel-component-small .carousel-prev .left-button-image,
+	.carousel-component-small .carousel-prev .left-button-image-enabled,
+	.carousel-component-small .carousel-prev .left-button-image-disabled {
+		background:url('../images/global/icn_carousel_sprite.jpg');
+		background-position:top left;
+		position:relative;
+		height:22px;
+		width:22px;
+		margin:0px;
+		padding:0px;
+		}
+	.carousel-component-small .carousel-prev .left-button-image-enabled  {
+		background:url('../images/global/icn_carousel_sprite.jpg');
+		background-position:bottom left;
+	}
+	.carousel-component-small .carousel-next .right-button-image,
+	.carousel-component-small .carousel-next .right-button-image-enabled,
+	.carousel-component-small .carousel-next .right-button-image-disabled {
+		background:url('../images/global/icn_carousel_sprite.jpg');
+		background-position:top right;
+		position:relative;
+		height:22px;
+		width:22px;
+		margin:0px;
+		padding:0px;
+		}
+	.carousel-component-small .carousel-next .right-button-image-enabled {
+		background:url('../images/global/icn_carousel_sprite.jpg');
+		background-position:bottom right;
+	}
+
+
+
+/* =Product detail start =VR */
+* sup {
+    font-size: 1.0em !important;
+}
+
+sup {
+	font-size: 0.8em;
+}
+.product-detail .page.active {
+	border-width: 0 !important;
+}
+.product-detail .page_content {
+	padding:0;
+	width:786px;
+	float:left;
+	border-width: 0 !important;
+}
+#footer ul, #footer p {
+	font-size:1.1em;
+}
+a.zoomimage {
+	display: inline;
+	background: transparent url(../images/global/icn_closeup.gif) 100% 50% no-repeat;
+	padding-right: 19px;
+	font-size: 1.1em;
+	height: 14px;
+	float: right;
+	margin-right: 45px;
+}
+.product-detail .product-pricing {
+	padding-bottom: 90px;
+}
+.product-detail .product-pricing .upc_code {
+	color: #000000;
+}
+.product-detail #product_container {
+	margin: 30px auto 10px;
+}
+
+/* =Footnotes start =VR */
+#productDetailFootnotesArea  {
+    clear: both;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#showHideFootesLine {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 11px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    text-align: right;
+    width: 100%;
+}
+.showHideFootnotesLink  {
+    background: transparent url(../images/global/dimension_arrow.gif) right top no-repeat;
+    color: #CCCCCC;
+    line-height: 11px;
+    margin-right: 28px;
+    padding-right: 15px;
+    text-decoration: none;
+}
+#footNote.opened {
+	background-position: right bottom;
+}
+#footNoteContent {
+    background-color: #EEEEEE;
+    color: #303030 !important;
+    padding: 16px 16px 70px;
+    margin: 0;
+    font-size: 1.2em;
+	display: none;
+}
+ol.productFootNoteList {
+	margin:0;
+	padding:0 0 20px 25px;
+}
+ol.productFootNoteList li {
+	list-style-type:decimal;
+	margin-top:2px;
+}
+
+.pdvTabDetail .itemWrapper {
+	overflow: hidden;
+	height: 354px;
+}
+
+.pdvTabDetail .item {
+	width: 143px;
+	height: 113px;
+	margin: 0 7px 4px 7px;
+	border-bottom: 1px solid #262626;
+	float: left;
+}
+
+.pdvTabDetail .itemTitle {
+	/*height: 27px;*/
+	font-size: 10px;
+	font-weight: bold;
+	padding: 5px 5px 0 5px;
+}
+.pdvTabDetail .itemTitle a {
+}

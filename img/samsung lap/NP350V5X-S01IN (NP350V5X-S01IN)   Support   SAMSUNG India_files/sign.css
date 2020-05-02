@@ -1,0 +1,457 @@
+@charset "utf-8";
+.layer_popup{font-size:0.75em;  color:#747474; }
+li {list-style:none;}
+img, fieldset {border:0 none;}
+img {vertical-align:middle;}
+legend, hr {display:none;}
+legend {position:absolute; top:0; left:0; width:0; height:0; display:block; overflow:hidden; visibility:hidden; font-size:0; line-height:0;}
+input, select, textarea {font-size:100%;  color:#707070; background:#fff;}
+button {border:0 none;background:transparent;}
+em, address {font-style:normal;}
+table {border-spacing:0;}
+caption {font-size: 0; line-height: 0; width:0; height:0; text-indent:-1000px; overflow: hidden;}
+.layer_popup a,.layer_popup a:link,.layer_popup a:visited {text-decoration:none;}
+
+a:hover, a:active {text-decoration:none;}
+a:focus {text-decoration:none;}
+
+* {font-weight:normal;}
+input[readonly="readonly"] { color:#999;cursor:default;}
+
+.mgt5 {margin-top:5px !important}
+.mgt10 {margin-top:10px !important}
+.mgt15 {margin-top:15px !important}
+.ac {text-align:center !important}
+.al {text-align:left !important}
+
+html.ltr .ss_samsung .sign-inner-wrap input[type='checkbox'] {left: -9999em; position:absolute}
+html.ltr .ss_samsung .sign-inner-wrap input[type='checkbox'] + label { float: left;}
+.ss_samsung .sign-inner-wrap input[type='checkbox'] + label {clear: none;cursor: pointer;line-height: 20px !important;}
+html.ltr .ss_samsung .sign-inner-wrap input[type='checkbox'] + label:before,
+html.ltr .ss_samsung .sign-inner-wrap .input [type='checkbox'].placeholder + label:before {float: left;}
+html.ltr .ss_samsung .sign-inner-wrap input[type='checkbox'] + label:before {margin-right: 10px;}
+.ss_samsung .sign-inner-wrap input[type='checkbox'] + label:before {width: 20px !important;height: 20px !important;background:#A6A8AA;content: "";}
+.ss_samsung .sign-inner-wrap input[type='checkbox']:checked + label:before{ background:#0071BF;font-family:'samsungIcon';content: "\e003"; color: white;font-size: 10px;font-size: 1rem;text-align: center;line-height: 26px;display: -moz-inline-stack;display: inline-block;vertical-align: middle;zoom: 1;}
+.ss_samsung form:not(#foo) > fieldset input[type='checkbox']:checked + label:before {font-size:.8em}
+
+.layer_popup{ z-index:9990; display:none; }
+.layer_popup + .lightbox-skrim{ display:none; z-index:8999; }
+
+.ss_samsung #sign_wrap .input{ padding:0; }
+/*.ss_samsung .email .input, .ss_samsung .password .input{ margin-bottom:0; }*/
+.layer_popup #popup_signin_all .sign-inner-wrap .popup_cont .sign_content .signin .member_wrap .email .remember_email_check .jqTransformCheckboxWrapper .jqTransformCheckbox,
+.layer_popup #popup_sign .popup_cont .member_wrap .email .remember_email_check .jqTransformCheckboxWrapper .jqTransformCheckbox
+{ width:16px; height:16px; background:url("http://store.samsung.com/_ui/desktop/common/images/form/bg_checkbox.gif") no-repeat 0 0; display:inline-block; text-indent:-2000px; }
+.layer_popup #popup_signin_all .popup_cont .order_num .input .input_wrap input{ width:420px; height:18px; padding:3px 0 0 10px; margin-top:3px; }
+#popup_sign { position:absolute; z-index: 9999; display: block; }
+.ss_samsung button.btnType01{ margin: 15px 10px; border:1px solid #ccc; border-radius:5px; background:#f1f2f4; padding:10px; }
+.ss_samsung .error, .ss_samsung p.error {margin-bottom:0;font-size: 1.12em;}
+
+
+.ss_samsung #sign_wrap .input input, .ss_samsung #sign_wrap .input .placeholder {font-size: 16px;}
+/* form */
+#sign_wrap .jqTransformHidden {display:none;}
+#sign_wrap .jqTransformInputWrapper {height:20px;background:#f1f1f1 !important}
+
+/* common popup */
+/* layer_popup default */
+.layer_popup sup { color:#c13b00; vertical-align:top; padding-left: 3px;}
+.ss_samsung.sign #content {padding-top:50px;padding-bottom: 50px;}
+@media (max-width:768px) {
+	.ss_samsung.sign #content {padding-top:0;padding-bottom: 0;}
+}
+.layer_popup .sign-inner-wrap {position:relative;padding:30px 20px 0;}
+.layer_popup .sign-inner-wrap .popup_title { color:#333;font-size:20px;font-weight:normal;line-height:20px;}
+.layer_popup .sign-inner-wrap .close {position:absolute;top:10px;right:10px;padding:10px;}
+.layer_popup .sign-inner-wrap .close-button {position:absolute;right: 20px;top: 20px;font-size: 2em; color:#292929;}
+@media (min-width:48em) {
+	.layer_popup .sign-inner-wrap .close-button {right: 28px;top: 28px;font-size: 2.5em;}
+}
+
+/* popup_sign and common */
+.layer_popup #sign_wrap {position:absolute;z-index:9000;width:95%; color:#292929;}
+@media (min-width:48em) {
+	.layer_popup #sign_wrap {position:absolute;width: 500px}
+}
+#sign_wrap {font-family:'SamsungIFRg';overflow: hidden;}
+@media (min-width:768px) and (max-width:960px) {
+	#sign_wrap {border:1px solid #e2e2e2;margin:0 50px;}
+}
+@media (min-width:961px) {
+#sign_wrap {font-family:'SamsungIFRg';margin: 0 auto;width:960px;border:1px solid #e2e2e2;}
+}
+#sign_wrap .sign-inner-wrap {background:#fff;position:relative;padding:20px;}
+@media (min-width:48em) {
+	#sign_wrap .sign-inner-wrap {padding: 30px;}
+}
+#sign_wrap .sign-inner-wrap .title { color:#000;font-size: 22px;background:#fff;}
+@media (min-width:48em) {
+#sign_wrap .sign-inner-wrap .title {font-size: 32px;font-family:'SamsungIFBd'}
+}
+#sign_wrap .popup_cont {}
+#sign_wrap .popup_cont .sub-tit {font-size:16px;margin:25px 0 15px;font-family:'SamsungIFBd'}
+@media (min-width:48em) {
+	#sign_wrap .popup_cont .sub-tit {font-size:22px;margin:35px 0 25px}
+}
+#sign_wrap .input-wrap {clear:both}
+#sign_wrap .input-wrap label {font-size:14px; color:#000;margin-bottom: 5px;display: inline-block;}
+#sign_wrap .input-wrap label sup { color:#D64100}
+@media (min-width:48em) {
+	#sign_wrap .input-wrap label {font-size:16px;margin-bottom:7px;}
+}
+#sign_wrap .input-wrap .input {margin-bottom:5px;}
+#sign_wrap .input-wrap .input input {padding:3px 5px 4px!important;margin:0;width: 98%;}
+#sign_wrap .chk {position:relative;overflow:hidden}
+#sign_wrap .chk label { font-size:12px; font-family: 'SamsungIFRg';}
+@media (min-width:48em) {
+	#sign_wrap .chk label { font-size:14px}
+}
+#sign_wrap .sign-link {}
+#sign_wrap .sign-link a {font-size:12px !important;font-family: 'SamsungIFRg'; color:#0071BF !important}
+@media (min-width:48em) {
+	#sign_wrap .sign-link a {font-size:15px !important}
+}
+#sign_wrap .btn-wrap {margin-top:25px}
+@media (min-width:48em) {
+	#sign_wrap .btn-wrap {margin-top:40px}
+}
+#sign_wrap .btn-wrap .button {font-size:14px;padding: 12px 40px;}
+@media(min-width:48em) {
+	#sign_wrap .btn-wrap .button {font-size:16px;padding: 14px 60px;}
+}
+/* [Dev] 140224 CSS Modify */
+#sign_wrap .btn-wrap p {margin-top:10px;font-size:15px !important}
+#sign_wrap .btn-wrap p a {font-family:'SamsungIFRg'; color:#0071BF !important}
+@media (min-width:48em) {
+	#sign_wrap .btn-wrap p, #sign_wrap .btn-wrap p a { font-size:15px}
+}
+#sign_wrap .connect_wrap {margin-top:30px;padding-top:20px;border-top:1px solid #d2d2d2;}
+@media (min-width:48em) {
+	#sign_wrap .connect_wrap {margin-top:20px;padding-top:15px;}
+}
+#sign_wrap .connect_wrap .connet-tit {font-size:16px;font-family: 'SamsungIFBd';margin-bottom:10px}
+@media (min-width:48em) {
+	#sign_wrap .connect_wrap .connet-tit {font-size:22px;margin-bottom:15px}
+}
+#sign_wrap .sns-wrap {}
+@media (max-width:48em) {
+	#sign_wrap .sns-wrap {text-align:center}
+	#sign_wrap .sns-wrap a img{ height:48px;}
+}
+@media (max-width:22.5em) { #sign_wrap .sns-wrap a img{ height:40px;}}
+@media (max-width:320px) {#sign_wrap .sns-wrap a img{ height:34px;}}
+
+#sign_wrap .sns-wrap a + a {margin-left:4px}
+
+#sign_wrap .sns-wrap .ico-desctop {display:none}
+@media (min-width:48em) {
+	#sign_wrap .sns-wrap .ico-mobile {display:none}
+	#sign_wrap .sns-wrap .ico-desctop {display:block}
+}
+#sign_wrap .sign-inner-wrap .error {margin-bottom:5px;font-size:13px}
+
+/* check-out sign */
+#sign_wrap .sign-inner-wrap .sign-cont {margin-top:20px;padding-bottom:20px}
+#sign_wrap .sign-inner-wrap .sign-cont:after {content:' ';display:block;clear:both}
+#sign_wrap .sign-inner-wrap .sign-cont .left-group {width:100%}
+#sign_wrap .sign-inner-wrap .sign-cont .right-group{width:100%}
+@media (min-width:640px) {
+	#sign_wrap .sign-inner-wrap .sign-cont {}
+	#sign_wrap .sign-inner-wrap .sign-cont .left-group {float:left;width:50%}
+	#sign_wrap .sign-inner-wrap .sign-cont .right-group{float:right;width:50%}
+}
+#sign_wrap .sign-inner-wrap .sign-cont .sub-tit { color:#000;font-family: 'SamsungIFBd';font-size: 18px;margin-bottom:20px}
+@media (min-width:960px) {
+#sign_wrap .sign-inner-wrap .sign-cont .sub-tit {font-size: 22px;}
+}
+#sign_wrap .sign-inner-wrap .sign-cont .btn-guest { color:#292929;background:#e2e2e2;min-width:220px;font-size: 14px;}
+@media (min-width:960px) {
+#sign_wrap .sign-inner-wrap .sign-cont .btn-guest {min-width:280px;font-size: 18px;}
+}
+@media (max-width:640px) {
+	#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section { margin-top:20px}
+}
+#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section .title {font-family:Arial;font-size:18px}
+#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section .sign-link {margin-top:20px}
+@media (min-width:640px) and (max-width:768px) {
+	#sign_wrap .sign-inner-wrap .sign-cont .left-group .input-wrap .input {width: 270px;}
+	#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section {padding: 0 0 0 45px;}
+}
+@media (min-width:768px) {
+	#sign_wrap .sign-inner-wrap .sign-cont .left-group .input-wrap .input {width: 280px;}
+	#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section {padding: 0 0 0 45px;}
+	#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section .sign-link {text-align:right;margin-top: 160px;}
+}
+@media (min-width:960px) {
+	#sign_wrap .sign-inner-wrap .sign-cont .left-group .input-wrap .input {width: 370px;}
+	#sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section {padding: 0 0 0 85px;}
+}
+
+@media (min-width:768px) and (max-width:960px) {
+	.question-wrap {border:1px solid #e2e2e2;margin:20px 50px 0;}
+}
+@media (min-width:961px) {
+	.question-wrap {font-family:'SamsungIFRg';margin: 20px auto;width:960px;border:1px solid #e2e2e2;}
+}
+.question-wrap .q-inner {overflow:hidden;}
+@media (min-width:768px) {.question-wrap .q-inner {background:#fbfbfb;}}
+.question-wrap .title {font-family:'SamsungIFBd';width:50%;float:left}
+.question-wrap .title h2{font-size:20px;margin:20px 0 0 30px}
+.question-wrap .title h2 span { color:#0079c5}
+.question-wrap .title h2 .number { color:#000;font-size:16px;display:inline-block;height:20px;line-height:20px;border-left:1px solid #e2e2e2;padding-left:15px;margin-left:15px;}
+@media (max-width:800px) {
+	.question-wrap .title h2{font-size:18px}
+	.question-wrap .title h2 .number {font-size:15px;}
+}
+.question-wrap .list {float:right;width:49%;border-left:1px solid #e2e2e2;}
+.question-wrap .list .list-cont {margin-left:70px;padding:13px 0}
+.question-wrap .list .list-cont li {padding-left:10px;background:url('/common/next/img/bg_dot.gif') no-repeat 0 10px}
+.question-wrap .list .list-cont li a {font-size:14px; color:#444}
+.question-wrap .list .list-cont li a:hover {text-decoration:underline;}
+@media (max-width:768px) {
+	.question-wrap .title {float:none;width:100%}
+	.question-wrap .title h2 {margin-left:20px}
+	.question-wrap .list {float:none;border:none;width:100%}
+	.question-wrap .list .list-cont {margin-left:20px}
+}
+
+/* Member, Guest Sign In */
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab {}
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab:after {content:' ';display:block;clear:both;}
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li {float:left;width:50%}
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li {background:#e7e7e6;}
+@media (max-width:560px) {
+	#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li.last a {padding: 10px 0;}
+	#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li.last em {display:block;}
+
+}	
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li.on {background:#52565a }	
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li a {display:block;text-align:center;font-size:14px; color:#000;font-family:'SamsungIFBd';padding: 18px 0;}	
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li.on a { color:#fff}	
+}
+#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li.on {background:#52565a }
+
+@media (min-width:768px) {
+	#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li {}
+	#sign_wrap .sign-inner-wrap .sign-cont .sign_tab li a {font-size:18px;}
+}
+#sign_wrap .sign-inner-wrap .sign-cont .tab-cont {margin-top:35px}
+#sign_wrap .sign-inner-wrap .sign-cont .tab-cont li {display:none}
+#sign_wrap .sign-inner-wrap .sign-cont .tab-cont li.on {display:block}
+#sign_wrap .sign-inner-wrap .sign-cont .tab-cont .connect_wrap .connet-tit {font-family:'SamsungIFBd';font-size:18px}
+@media (min-width:768px) {#sign_wrap .sign-inner-wrap .sign-cont .tab-cont .connect_wrap .connet-tit {font-size:24px}}
+#sign_wrap .sign-inner-wrap .sign-cont .tab-cont .connect_wrap {border:0 none}
+#sign_wrap .sign-inner-wrap .sign-cont .tab-cont .sns-wrap a + a {margin-left:10px}
+@media (min-width:768px) and (max-width:960px) {
+	#sign_wrap .sign-inner-wrap .sign-cont .tab-cont .sns-wrap {text-align:center}
+	#sign_wrap .sign-inner-wrap .sign-cont .tab-cont .sns-wrap a img {width:190px}
+	#sign_wrap .sign-inner-wrap .sign-cont .tab-cont .sns-wrap a + a {margin-left:8px}
+}
+#sign_wrap .sign-inner-wrap .sign-cont .sub-tit .sub-tit-desc {display:block;font-size:13px;font-family:'SamsungIFRg'}
+@media (min-width:768px) {
+	#sign_wrap .sign-inner-wrap .sign-cont .sub-tit .sub-tit-desc {font-size:15px;}
+}
+
+/* 20140206 bjy : start - login.css merge */
+/* popup_privacy */
+.layer_popup #popup_privacy {position:absolute;z-index:9000;width:484px; color:#292929;}
+.layer_popup .popup_wrap .popup_title2 { color:#333;font-size:20px;font-weight:normal;line-height:20px;}
+.layer_popup #popup_privacy .popup_wrap {background:#fff;position:relative;padding: 30px 20px 23px 20px}
+.layer_popup #popup_privacy .popup_wrap .popup_title { color:#000;font-size: 22px;padding-bottom:10px;border-bottom: 2px solid #ccc;background:#fff;font-family:'SamsungIFBd'}
+.layer_popup #popup_privacy .popup_cont {padding:0 0 0 0;overflow:hidden;}
+.layer_popup #popup_privacy .popup_cont .privacy_wrap{overflow:hidden;margin:30px 0 0 0;padding:0}
+.layer_popup #popup_privacy .popup_cont .privacy_wrap a.privacy_link{text-decoration:underline; color:#0071BF}
+html.ltr .layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box{float:left;margin-bottom:15px;}
+html.rtl .layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box{float:right;margin-bottom:15px;}
+.layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box p.check_error{clear:both;padding:5px 0 0 38px; color:#fd020e}
+.layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box p.check_txt{clear:both;padding-left:38px}
+.layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box label{clear:both}
+.layer_popup #popup_privacy .popup_cont .privacy_btn{clear:both;margin-top:20px;padding-top:10px;text-align:center}
+.layer_popup #popup_privacy .popup_cont .privacy_btn a.button{padding-left:10px;padding-right:10px; }
+
+@media (max-width:768px) {
+.layer_popup #popup_privacy {width:90%}
+.layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box {position:relative; min-height:30px; width:100%;}
+.layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box label {position:relative; left:40px; top:0;margin-right:10px;line-height:14px }
+.layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box label:before {position:absolute; left:-40px; }
+.layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box p.check_error{clear:both;padding-left:40px; color:#fd020e}
+.layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box p.check_txt{clear:both;padding:5px 0 0 40px}
+}
+@media (max-width:480px) {
+.layer_popup #popup_privacy .popup_cont .privacy_btn .button{margin-top:5px}
+}
+
+#popup-type01, #popup-type02,#popup-type03,#popup-type04 ,#popup-type05 ,#popup-type06 {position: absolute;z-index: 9999;width:350px;min-height:130px;display: block;background:#fff}
+.popup_wrap .pop-tit {font-size:20px;margin-bottom:20px}
+.popup_wrap .msg-text {font-size:13px; color:#000;margin-bottom:20px}
+.popup_wrap .msg-text .col { color:#ff7200;display:inline-block}
+.popup_wrap .tc {text-align:center}
+.popup_wrap .pop-btn {text-align: center}
+#popup-type02 .pop-btn, #popup-type03 .pop-btn, #popup-type04 .pop-btn, #popup-type05 .pop-btn, #popup-type06 .pop-btn, #popup-type10 .pop-btn {margin-bottom:30px}
+.layer_popup .popup_wrap {position:relative;padding:30px 20px 0;}
+.layer_popup .popup_wrap .popup_title { color:#333;font-size:20px;font-weight:normal;line-height:20px;}
+.layer_popup .popup_wrap .close {position:absolute;top:10px;right:10px;padding:10px;}
+html.ltr .layer_popup .popup_wrap .close-button {position:absolute;right:16px;top:10px;font-size:1.875em; color:#666;}
+html.rtl .layer_popup .popup_wrap .close-button {position:absolute;left:16px;top:10px;font-size:1.875em; color:#666;}
+/* 20140206 bjy : end */
+
+/* 2014-06-03 fixed by naomi */
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer {margin-top:20px;position:relative;font-size:15px; color:#000}
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer a { color:#000}
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle {padding:10px 0;display:block;font-weight:bold}
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-down-arrow {/* position:absolute;left:100px;top:15px; */}
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-down-arrow,
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-up-arrow {font-size: 6px; color:#0071BF}
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-up-arrow.icon-down-arrow:after{font-family: 'samsungIcon';content: "\2f"; }
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-up-arrow:after{font-family: 'samsungIcon';content: "\30"; }
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-down-arrow.icon-up-arrow:before {content:"\2f" !important; display:none;}
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle-content {}
+#sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle-content p {padding:5px 0;font-size:12px}
+
+/* link-popup */
+#link_wrap {visibility: visible; height: 100%; overflow: auto;}
+.link_popup {width:470px;background:#fff;}
+.link_popup .layer_wrap {padding:24px 27px 9px;}
+.link_popup .layer_wrap .layer_title {padding:0 0 34px;}
+.link_popup .layer_wrap .layer_title h1 { color:#333;font-size:20px;font-family:'SamsungIFBd';}
+.link_popup .layer_wrap .layer_title img {display:block;padding:0 0 13px 4px;}
+.link_popup .layer_wrap .layer_title span.store {position:absolute;left:100px;top:30px;font-family:'SamsungIFBd'; color:#0C4DA2;font-size:12px;text-transform:uppercase;}
+.link_popup .layer_wrap .layer_cont .cont {padding:0 4px 23px;}
+.link_popup .layer_wrap .layer_cont .cont .in_title { color:#333;font-size:16px;}
+.link_popup .layer_wrap .layer_cont .cont .in_cont { color:#666;font-size:13px;line-height:20px;}
+.link_popup .layer_wrap strong { color:#444;display:inline-block;font-size:14px;padding:0 0 20px 5px;}
+.link_popup .layer_wrap strong span { color:#0079c5;}
+
+/* brower upgrade popup : 20140319 - start */
+#popup-type10, #ie8alert .popAlign {position: absolute;z-index: 9999;width:700px;min-height:130px;display: block;background:#fff}
+#popup-type10 .pop-tit, #ie8alert .popAlign .pop-tit{ color:#000;font-size: 22px;padding:10px 0 20px 0;border-bottom: 2px solid #ccc;background:#fff;font-family:'SamsungIFBd'}
+#popup-type10 .popup_wrap .msg-text,
+#ie8alert .popAlign .popup_wrap .msg-text{line-height:18px}
+#popup-type10 .popup_wrap .msg-text ul,
+#ie8alert .popAlign .popup_wrap .msg-text ul{padding-bottom:10px; color:#e40020}
+/* brower upgrade popup : 20140319 - end */
+
+
+
+
+/* b2c font reset */
+.b2c .layer_popup{font-size:0.75em;}
+.ss_samsung.b2c .sign-inner-wrap input[type='checkbox'] + label {line-height: 20px !important;}
+.ss_samsung.b2c .sign-inner-wrap input[type='checkbox']:checked + label:before{font-family:'samsungIcon';font-size: 10px;font-size: 1rem;}
+.ss_samsung.b2c form:not(#foo) > fieldset input[type='checkbox']:checked + label:before {font-size:.8em}
+.ss_samsung.b2c .error, .ss_samsung.b2c p.error {font-size: 1.12em;}
+.ss_samsung.b2c #sign_wrap .input input, .ss_samsung.b2c #sign_wrap .input .placeholder {font-size: 16px;}
+.b2c .layer_popup .sign-inner-wrap .popup_title {font-size:20px;font-weight:normal;}
+.b2c .layer_popup .sign-inner-wrap .close-button {font-size: 2em;}
+@media (min-width:48em) {
+	.b2c .layer_popup .sign-inner-wrap .close-button {font-size: 2.5em;}
+}
+.b2c #sign_wrap {font-family:'SamsungIFRg';}
+@media (min-width:961px) {
+.b2c #sign_wrap {font-family:'SamsungIFRg';}
+}
+.b2c #sign_wrap .sign-inner-wrap .title {font-size: 22px;}
+@media (min-width:48em) {
+.b2c #sign_wrap .sign-inner-wrap .title {font-size: 32px;font-family:'SamsungIFBd'}
+}
+.b2c #sign_wrap .popup_cont .sub-tit {font-size:16px;font-family:'SamsungIFBd'}
+@media (min-width:48em) {
+	.b2c #sign_wrap .popup_cont .sub-tit {font-size:22px;}
+}
+.b2c #sign_wrap .input-wrap label {font-size:14px;}
+@media (min-width:48em) {
+	.b2c #sign_wrap .input-wrap label {font-size:16px;}
+}
+.b2c #sign_wrap .chk label { font-size:12px; font-family: 'SamsungIFRg';}
+@media (min-width:48em) {
+	.b2c #sign_wrap .chk label { font-size:14px}
+}
+.b2c #sign_wrap .sign-link a {font-size:12px !important;font-family: 'SamsungIFRg';}
+@media (min-width:48em) {
+	.b2c #sign_wrap .sign-link a {font-size:15px !important}
+}
+.b2c #sign_wrap .btn-wrap .button {font-size:14px;}
+@media(min-width:48em) {
+	.b2c #sign_wrap .btn-wrap .button {font-size:16px;}
+}
+.b2c #sign_wrap .btn-wrap p {font-size:15px !important}
+.b2c #sign_wrap .btn-wrap p a {font-family:'SamsungIFRg';}
+@media (min-width:48em) {
+	.b2c #sign_wrap .btn-wrap p, #sign_wrap .btn-wrap p a { font-size:15px}
+}
+.b2c #sign_wrap .connect_wrap .connet-tit {font-size:16px;font-family: 'SamsungIFBd';}
+@media (min-width:48em) {
+	.b2c #sign_wrap .connect_wrap .connet-tit {font-size:22px;}
+}
+.b2c #sign_wrap .sign-inner-wrap .error {font-size:13px}
+
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .sub-tit {font-family: 'SamsungIFBd';font-size: 18px;}
+@media (min-width:960px) {
+	.b2c #sign_wrap .sign-inner-wrap .sign-cont .sub-tit {font-size: 22px;}
+}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .btn-guest {font-size: 14px;}
+@media (min-width:960px) {
+	.b2c #sign_wrap .sign-inner-wrap .sign-cont .btn-guest {font-size: 18px;}
+}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .right-group .guset-section .title {font-family:Arial;font-size:18px}
+
+@media (min-width:961px) {
+	.b2c .question-wrap {font-family:'SamsungIFRg';}
+}
+.b2c .question-wrap .title {font-family:'SamsungIFBd';}
+.b2c .question-wrap .title h2{font-size:20px;}
+.b2c .question-wrap .title h2 .number {font-size:16px;height:20px;line-height:20px;}
+@media (max-width:800px) {
+	.b2c .question-wrap .title h2{font-size:18px}
+	.b2c .question-wrap .title h2 .number {font-size:15px;}
+}
+.b2c .question-wrap .list .list-cont li a {font-size:14px;}
+
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .sign_tab li a {font-size:14px;font-family:'SamsungIFBd';}	
+@media (min-width:768px) {
+	.b2c #sign_wrap .sign-inner-wrap .sign-cont .sign_tab li a {font-size:18px;}
+}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .tab-cont .connect_wrap .connet-tit {font-family:'SamsungIFBd';font-size:18px}
+@media (min-width:768px) {.b2c #sign_wrap .sign-inner-wrap .sign-cont .tab-cont .connect_wrap .connet-tit {font-size:24px}}
+.b2c #sign_wrap .sign-inner-wrap .sign-cont .sub-tit .sub-tit-desc {font-size:13px;font-family:'SamsungIFRg'}
+@media (min-width:768px) {
+	.b2c #sign_wrap .sign-inner-wrap .sign-cont .sub-tit .sub-tit-desc {font-size:15px;}
+}
+
+.b2c .layer_popup .popup_wrap .popup_title2 {font-size:20px;font-weight:normal;line-height:20px;}
+.b2c .layer_popup #popup_privacy .popup_wrap .popup_title {font-size: 22px;font-family:'SamsungIFBd'}
+
+@media (max-width:768px) {
+	.b2c .layer_popup #popup_privacy .popup_cont .privacy_wrap .check_box label {line-height:14px }
+}
+
+.b2c .popup_wrap .pop-tit {font-size:20px;}
+.b2c .popup_wrap .msg-text {font-size:13px;}
+.b2c .layer_popup .popup_wrap .popup_title {font-size:20px;font-weight:normal;line-height:20px;}
+html.ltr .b2c .layer_popup .popup_wrap .close-button,
+html.rtl .b2c .layer_popup .popup_wrap .close-button {font-size:1.875em;}
+
+/* 2014-06-03 fixed by naomi */
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer {font-size:15px;}
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle {font-weight:bold}
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-down-arrow,
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-up-arrow {font-size: 6px;}
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-up-arrow.icon-down-arrow:after{font-family: 'samsungIcon';content: "\2f"; }
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle .icon-up-arrow:after{font-family: 'samsungIcon';content: "\30"; }
+.b2c #sign_wrap .sign-inner-wrap .connect_wrap .toggle-layer .toggle-content p {font-size:12px}
+
+/* link-popup */
+.b2c .link_popup .layer_wrap .layer_title h1 {font-size:20px;font-family:'SamsungIFBd';}
+.b2c .link_popup .layer_wrap .layer_title span.store {font-family:'SamsungIFBd';font-size:12px;}
+.b2c .link_popup .layer_wrap .layer_cont .cont .in_title {font-size:16px;}
+.b2c .link_popup .layer_wrap .layer_cont .cont .in_cont {font-size:13px;line-height:20px;}
+.b2c .link_popup .layer_wrap strong {font-size:14px;}
+
+/* brower upgrade popup : 20140319 - start */
+.b2c #popup-type10 .pop-tit, .b2c #ie8alert .popAlign .pop-tit{font-size: 22px;font-family:'SamsungIFBd'}
+.b2c #popup-type10 .popup_wrap .msg-text,
+.b2c #ie8alert .popAlign .popup_wrap .msg-text{line-height:18px}
+/* brower upgrade popup : 20140319 - end */
+
+/* 20140827 bjy : login layerpopup input focus */
+.fs-boarder{border:2px solid #9ec0f7}

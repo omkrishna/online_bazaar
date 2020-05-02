@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*.ss_samsung.support .subfilter-sortby .fl h3{text-transform:none;}*/
+
+@media (max-width: 800px) {
+	#support-popover-container .popover .find-my-device-container .category-finder .category-name {min-height:40px; line-height:90%;}
+}
+.support-container .search-by #searchModelNumber .input {left:200px;}
+.ss_samsung.support .search-by div.auto-complete {left:120px; }
+@media (min-width: 48em) {
+	.support-container .search-by .col2a {width:60%;}
+	.support-container .search-by .col2b {width:40%;}
+}
+@media (min-width: 64em) {
+	.ss_samsung.support .search-by div.auto-complete {left:200px;}
+}
+@media (max-width: 1800px) and (min-width: 1281px) {
+	.support-container .search-by #searchModelNumber .input {left:160px;}
+	.ss_samsung.support .search-by div.auto-complete {left:160px;}
+}
+@media (max-width: 1484px) and (min-width: 1281px) {
+	.support-container .search-by .search-input {width:130px;}
+}
+@media (max-width: 1280px) {
+	.support-container .search-by .col2a,
+	.support-container .search-by .col2b {width:100%;}
+	.support-container .search-by #searchModelNumber .input {left: 200px;}
+	.ss_samsung.support .search-by div.auto-complete {left:200px;}
+	.support-container .search-by .search-input {width:220px;}
+	.support-container .ctrLabel .labelTxt {width:240px;}
+}
+/*@media (max-width: 1024px) {
+	.support-container .search-by #searchModelNumber .input {left:200px;}
+	.ss_samsung.support .search-by div.auto-complete {left:200px;}
+}*/
+@media (max-width: 1023px) {
+  .support-container .ctrLabel .labelTxt {width:270px; font-size:20px; font-size:1.25rem;}
+  .support-container .search-by #searchModelNumber .input {left:120px;}
+  .ss_samsung.support .search-by div.auto-complete {left:110px;}
+}
+@media (max-width: 800px) {
+	.support-container .search-by #searchModelNumber .input {left:120px;}
+	.ss_samsung.support .search-by div.auto-complete {left:110px;}
+	.support-container .search-by .search-input {width:180px;}
+	.support-container .ctrLabel .labelTxt {width:200px;}
+}
+@media (max-width: 767px) {
+  .support-container .search-by #searchModelNumber .input {left:0px;}
+  .ss_samsung.support .search-by div.auto-complete {left:0;}
+  .support-container .search-by .search-input {width:220px;}
+  .support-container .ctrLabel .labelTxt {width:240px;}
+  .support-container .search-by .col2a,
+  .support-container .search-by .col2b {width:auto;}
+}
+@media (max-width: 480px) {
+  .support-container .search-by .search-input {width:180px;}
+  .support-container .ctrLabel .labelTxt {width:200px;}
+}
+@media (min-width: 768px) {
+	.support-container .get-tips .common-list.quad-blocks li div h3 a {display:inline-block; width:100%; word-break:break-all;}
+}

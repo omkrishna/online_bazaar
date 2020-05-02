@@ -1,0 +1,33 @@
+/**
+ * Copyright (c) 2006-2007, Bill W. Scott
+ * All rights reserved.
+ * This work is licensed under the Creative Commons Attribution 2.5 License. To view a copy 
+ * of this license, visit http://creativecommons.org/licenses/by/2.5/ or send a letter to 
+ * Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+ * This work was created by Bill Scott (billwscott.com, looksgoodworkswell.com).
+ * Version 0.6.1 - 07.08.2007
+ */
+/**
+ * Standard Configuration. It is advised that this section NOT be modified as the
+ * carousel.js expects the behavior outlined below.
+ **/
+.carousel-component { 
+	position:relative;
+	overflow:hidden;   /* causes the clipping */
+	/*display:none;*/ /* component turns it on when first item is rendered */	
+}				
+.carousel-component ul.carousel-list { 
+	width:10000000px;
+	position:relative;
+	z-index:1; 
+}
+.carousel-component .carousel-list li { 
+	float:left;
+	list-style:none;
+	overflow:hidden;  
+}
+.carousel-component .carousel-clip-region { 
+	overflow:hidden; /* Secret to the clipping */
+	margin:0px auto;
+	position:relative; 
+}

@@ -1,0 +1,295 @@
+/** 
+COMMON IMPORT
+Common imports for the pages.
+**/
+/**
+VARIABLES
+Place all variables not related to susy in here.
+**/
+/* Colors */
+/* Color Palette Colors from \RGAWORK\clients\Samsung\Global_Ecomm\05_Visual_Design\_PSDs\ForDesigners\_SourcePSDs\_SharedRerouces\PSDs */
+/* BaseLine Font */
+/*Breakpoints*/
+/*360px*/
+/*640px*/
+/*800px*/
+/*1280*/
+/*1440*/
+/*1600*/
+/*1920*/
+/*361px*/
+/*641px*/
+/*801px*/
+/*1281*/
+/*1920*/
+/*Breakpoints*/
+/*0 to 360px*/
+/*361 to 640px*/
+/*641 to 800px*/
+/*801 to 1280*/
+/*1281 to 1920*/
+/* iOS Breaks */
+/*320px*/
+/*480px*/
+/*568px*/
+/*768px*/
+/*1024*/
+/*Icons*/
+/* IE fixes screen width */
+/* navigation variables */
+/*Android mobile portrait variable*/
+/*ios landscape variable*/
+/*tablet icon variable*/
+/*ios Menu width */
+/*ios Menu width */
+/*Instore margin grid*/
+/*GlanceGrid*/
+/* 800px */
+/* End navigation variables */
+/** 
+MIXINS & FUNCTIONS
+All mixins and functions not relating to susy.
+**/
+/* 
+* FUNCTIONS 
+*/
+/**
+@function px2em
+Returns em value
+@param pxval - pixel value
+Usage: @include px2em(120px)
+**/
+/**
+@function em2px
+Returns pixel value
+@param emval - em value
+Usage: @include em2px(2em)
+**/
+/**
+@function px2rem
+Convert PX to REM function.
+@param pxval - px value
+Usage: @include px2rem(2px)
+**/
+/* 
+* MIXINS
+*/
+/**
+@mixin vendor
+Easily apply styles and adding vendor prefixes will be added with ease.
+@param name - css property
+@param arg - css values 
+Usage: @include vendor(border-radius, 4px);
+**/
+/**
+@mixin keyframes
+Add keyframes to any element and it will include all the prefixes.
+@param name - name of animation
+Usage: 
+	@include keyframes(example) {
+		0% {opacity: 0}
+		100% {opacity:1} 
+	} 
+**/
+/**
+@mixin font-size 
+Convert px to rem and output fallback.
+@param sizeValue - rem value
+Usage: @include font-size(1.6)
+**/
+/**
+@mixin line-height
+Convert px to rem and output fallback.
+@param sizeValue - rem value
+Usage: @include line-height(1.6)
+**/
+/**
+@mixin cta
+@param size - size of font in rem
+@param ctaSize - size of icon font in rem
+Usage: @include cta(3);
+**/
+/* Samsung Font Regular */
+/* Samsung Font Bold */
+/* Samsung Font Black */
+/* Hide Text */
+/* Text OverFlow */
+/* Cart Price Text */
+/* Clear Elements */
+/* Removes Margin on Last Column */
+/**
+@mixin cssTriangle
+Creates a css triangle http://cssarrowplease.com
+@param size - size of the triangle
+@param borderWidth - width of the border
+@param borderColor - color of the border
+@param position - where the arrow should appear (top, right, bottom, left)
+@param bg - background color of the triangle
+Usage: @include cssTriangle(10px, 1px, #ccc, right, #000);
+**/
+/**
+@mixin opacity
+Sets opacity to element with vendor prefixes.
+@param decimal - decimal point for opacity
+Usage: @include opacity(.5);
+**/
+/* Sample Button Mixin */
+/**
+@mixin navigation-list
+Creates navigation layout with li elements
+@param $space - px value in margin-right
+Usage: @include navigation-list(12px);
+**/
+/* Input Placeholder */
+/* Custom Scrollbar */
+/* Grid Margin */
+/* Grid Padding */
+/**
+@mixin box-sizing
+Applying box model
+@param box-model - box module value
+Usage: @include box-sizing(border-box);
+**/
+/**
+@mixin nontop
+Add handler for when the page is removed from top 
+Usage: @include nontop(){ @param: @value};
+**/
+/* mixin to use in simple transition */
+/**
+@mixin ie-window
+Add handler for max width window on ie 8 and below
+Usage: @include ie-window();
+**/
+/* hover active mixin */
+/* pagination mixin */
+.support-container { /*Specific overrides*/ /* topics grid */ }
+.support-container .main-title { font-family: 'SamsungIFRg', Arial, sans-serif; font-weight: normal; font-size: 32px; font-size: 2rem; letter-spacing: -1px; }
+@media (min-width: 48em) { .support-container .main-title { font-size: 22px; font-size: 1.375rem; } }
+@media (min-width: 64em) { .support-container .main-title { font-size: 32px; font-size: 2rem; } }
+@media (min-width: 48em) { .support-container .header-support .main-featured-title { font-size: 26px; font-size: 1.625rem; } }
+@media (min-width: 64em) { .support-container .header-support .main-featured-title { font-size: 42px; font-size: 2.625rem; } }
+@media (min-width: 80.063em) { .support-container .header-support .main-featured-title { margin-top: 30px; } }
+.support-container .header-support p { font-family: 'SamsungIFRg', Arial, sans-serif; font-weight: normal; font-size: 18px; font-size: 1.125rem; }
+@media (min-width: 48em) { .support-container .header-support p { font-size: 12px; font-size: 0.75rem; } }
+@media (min-width: 64em) { .support-container .header-support p { font-size: 18px; font-size: 1.125rem; } }
+@media (min-width: 80.063em) { .support-container .header-support p { margin-bottom: 30px; } }
+/*@media (min-width: 48em) { .support-container .header-support { width: 40%; } }
+@media (min-width: 64em) { .support-container .header-support { width: 50%; } }
+@media (min-width: 80.063em) { .support-container .header-support { width: 90%; } }*/
+.support-container .category-menu-module .title { margin: 0; padding: 30px 0 0; overflow: hidden; background:#f9f9f9; }
+.support-container .category-menu-module .title .main-title { padding: 0 30px; margin: 0 0 25px; letter-spacing: normal; }
+@media (min-width: 48em) { .support-container .category-menu-module .title .main-title { padding: 0 20px; } }
+@media (min-width: 64em) { .support-container .category-menu-module .title .main-title { padding: 0 30px; } }
+.support-container .category-menu-module ul li a span[class*='icon-'] { font-size: 15px; font-size: 0.9375rem; margin-top: 7px; }
+html.ltr .support-container .category-menu-module ul li a span[class*='icon-'] { float: right; }
+html.rtl .support-container .category-menu-module ul li a span[class*='icon-'] { float: left; }
+@media (min-width: 48em) { .support-container .category-menu-module ul li a span[class*='icon-'] { margin-top: 1px; } }
+@media (min-width: 64em) { .support-container .category-menu-module ul li a span[class*='icon-'] { margin-top: 5px; } }
+@media (min-width: 90em) { .support-container .category-menu-module ul li a span[class*='icon-'] { margin-top: 7px; } }
+.support-container .search-by {width:100%; border: 0 none; }
+@media (min-width: 48em) { .support-container .search-by { margin-bottom: 40px; } }
+@media (min-width: 48em) { .support-container .search-by p { font-size: 13px; font-size: .9em; } }
+@media (min-width: 64em) { .support-container .search-by p { font-size: 18px; font-size: 1.125rem; } }
+.support-container .featured-topics { margin-top: 20px; }
+.support-container .featured-topics .main-title { padding: 0 30px; margin-bottom: 20px; }
+@media (min-width: 48em) { .support-container .featured-topics .main-title { padding: 0 20px; } }
+@media (min-width: 48em) { .support-container .featured-topics .main-title { padding: 0 30px; } }
+.support-container .featured-topics ul li { cursor: pointer; overflow: hidden; *zoom: 1; /*border-top: 1px solid #e7e7e7; border-bottom: 1px solid #e7e7e7;*/ }
+/*.support-container .featured-topics ul li:hover h4 {  color:#0071BF; }*/
+.support-container .featured-topics ul li img { width: 133px; }
+html.ltr .support-container .featured-topics ul li img { float: left;}
+html.rtl .support-container .featured-topics ul li img { float: right; }
+@media (min-width: 48em) { .support-container .featured-topics ul li img { width: 150px; min-height:150px;} }
+@media (min-width: 64em) { .support-container .featured-topics ul li img { width: 240px; min-height:240px;} }
+@media (min-width: 80.063em) { .support-container .featured-topics ul li img { width: 240px; min-height:240px;} }
+.support-container .featured-topics ul li .topic-content { padding-top: 17px; padding-bottom:17px;} /*20140319 shin*/
+html.ltr .support-container .featured-topics ul li .topic-content { padding-right: 20px; }
+html.rtl .support-container .featured-topics ul li .topic-content { padding-left: 20px; }
+html.ltr .support-container .featured-topics ul li .topic-content { padding-left: 152px; }
+html.rtl .support-container .featured-topics ul li .topic-content { padding-right: 152px; }
+.support-container .featured-topics ul li .topic-content .title { font-family: 'SamsungIFRg', Arial, sans-serif; font-weight: normal; font-size: 18px; font-size: 1.125rem; letter-spacing: -1px; margin-bottom: 10px; color:#000}
+.support-container .featured-topics ul li .topic-content p.etc{font-family:'SamsungIFRg', Arial, sans-serif; color:#000}
+.support-container .featured-topics ul li  a.liveSiteLink:hover .title,
+.support-container .featured-topics ul li  a.liveSiteLink:hover .etc{ color:#0071BF}
+@media (min-width: 22.5em) { .support-container .featured-topics ul li .topic-content .title { font-size: 22px; font-size: 1.375rem; } }
+@media (min-width: 64em) { .support-container .featured-topics ul li .topic-content .title { font-size: 28px; font-size: 1.75rem; } }
+@media (min-width: 80em) { .support-container .featured-topics ul li .topic-content .title { font-size: 28px; font-size: 1.75rem; } }
+.support-container .featured-topics ul li a {display:block; font-family: 'SamsungIFBd', Arial, sans-serif; font-weight: normal; font-size: 16px; font-size: 1rem; letter-spacing: -1px; }
+.support-container .featured-topics ul li a:after { content: " "; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; *zoom: 1; }
+.support-container .featured-topics ul li .topic-content a.liveSiteLink:hover{ color:#0071BF}
+.support-container .featured-topics ul li .topic-content a span { font-size: 15px; font-size: 0.9375rem; }
+@media (min-width: 22.5em) { .support-container .featured-topics ul li .topic-content a { font-size: 18px; font-size: 1.125rem; } }
+@media (min-width: 48em) { html.ltr .support-container .featured-topics ul li .topic-content { padding-left: 167px; }
+  html.rtl .support-container .featured-topics ul li .topic-content { padding-right: 167px; } }
+@media (min-width: 64em) { html.ltr .support-container .featured-topics ul li .topic-content { padding-left: 257px; }
+  html.rtl .support-container .featured-topics ul li .topic-content { padding-right: 257px; } }
+@media (min-width: 80.063em) { html.ltr .support-container .featured-topics ul li .topic-content { padding-left: 257px; }
+  html.rtl .support-container .featured-topics ul li .topic-content { padding-right: 257px; } }
+
+@media (min-width: 80.063em) { .support-container .featured-topics ul li { border-top: 1px solid #e7e7e7; border-left: 1px solid #e7e7e7; } }
+@media (min-width: 48em) { .support-container .featured-topics ul { /*border-bottom: 2px solid #e7e7e7;*/ overflow: hidden; } }
+@media (min-width: 80.063em) { .support-container .featured-topics ul { /*border-bottom: 1px solid #e7e7e7;*/ } }
+@media (min-width: 48em) { .support-container .featured-topics { margin-bottom: 0px; } }
+.support-container .useful-links.simple-list.alt ul li a { font-family: 'SamsungIFRg', Arial, sans-serif; font-weight: normal; }
+
+.scrollwrapper{ background:#fff; }
+html.ltr .support-container .featured-topics.ytype ul li .topic-content{ padding-left:30px; }
+html.ltr .support-container .featured-topics.ytype ul li{ height:auto; padding:0px 0 20px 0; } 
+html.rtl .support-container .featured-topics.ytype ul li .topic-content{ padding-right:30px; }
+html.rtl .support-container .featured-topics.ytype ul li{ height:auto; padding:0px 0 20px 0; } 
+ 
+/* 0127 yang */
+@media (max-width: 768px) {
+	.support-container .featured-topics ul li{ width:100%; }
+}
+@media (max-width: 420px) {
+	html.ltr .support-container .featured-topics.ytype ul li .topic-content{ padding-left:30px !important; }
+	html.rtl .support-container .featured-topics.ytype ul li .topic-content{ padding-right:30px !important; }
+}
+
+/* 20140307 support Featured Topics - shin */
+@media (min-width: 80em) { 
+	.support-container .featured-topics > ul {border-top:0 none;}
+	html.ltr .support-container .featured-topics > ul > li { float: left; border-bottom:2px solid #e7e7e7; border-right:2px solid #e7e7e7;}
+	html.rtl .support-container .featured-topics > ul > li { float: right; border-bottom:2px solid #e7e7e7; border-left:2px solid #e7e7e7;}
+}
+.support-container .featured-topics ul ul li {width:100%; border-bottom:2px solid #e7e7e7; }
+.support-container .featured-topics > ul {border-top:2px solid #e7e7e7; }
+html.ltr .support-container .featured-topics.ytype ul li {padding-bottom:0;}
+html.rtl .support-container .featured-topics.ytype ul li {padding-bottom:0;}
+html.ltr .support-container .featured-topics.ytype > ul > li {border-bottom:2px solid #e7e7e7;}
+html.rtl .support-container .featured-topics.ytype > ul > li {border-bottom:2px solid #e7e7e7;}
+html.ltr .support-container .featured-topics.ytype ul ul li {border-right:2px solid #e7e7e7;} 
+html.rtl .support-container .featured-topics.ytype ul ul li {border-left:2px solid #e7e7e7;} 
+html.ltr .support-container .featured-topics.ytype ul ul li + li {border-right:0 none;} 
+html.rtl .support-container .featured-topics.ytype ul ul li + li {border-left:0 none;} 
+@media (max-width: 767px) {
+	html.ltr .support-container .featured-topics.ytype ul ul li + li {border-bottom:0 none;} 
+	html.ltr .support-container .featured-topics.ytype ul ul li:last-child {border-bottom:0;} 
+	html.rtl .support-container .featured-topics.ytype ul ul li + li {border-bottom:0 none;} 
+	html.rtl .support-container .featured-topics.ytype ul ul li:last-child {border-bottom:0;} 
+}
+
+/*20140512 shin*/
+@media (min-width: 48em) {
+	.support-container .search-by {margin-bottom:-3px; }
+	.subcategory .support-container .search-by {margin-bottom:30px;}
+}
+@media (min-width: 64em) {
+	.support-container .header-support .main-featured-title {font-size:38px; font-size:2.375rem;}
+}
+@media (min-width: 80.063em) {
+  .support-container .header-support .main-featured-title { margin-top: 0;  }
+  .support-container .category-menu-module .title {background:none; padding-top:0;}
+}
+.support-container .featured-topics {clear: both; overflow:hidden; }
+.support-container .featured-topics .main-title {margin-top:20px; margin-bottom:0; padding-bottom:20px;}
+.support-container .search-by .popular-products .title {padding-top:0; background:none;}
+
+/*20140521 shin*/
+.support-pdp .support-container .featured-topics {position:relative; top:-1px; margin-top: 0; /*border-top:1px solid #e4e4e4;*/ }
+.category .support-container .featured-topics {position:relative; top:-1px; margin-top: 0; border-top:1px solid #e4e4e4;}
+
+/*20140730 shin*/
+html.ltr .support-container .featured-topics ul li img.not-link:hover {cursor:default;}

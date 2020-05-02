@@ -1,0 +1,45 @@
+{
+
+var google_ads = new Array();
+var google_ad;
+var google_radlinks = new Array();
+var google_radlink;
+var google_info = new Object();
+google_ad = {}; 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CruAMxT2eVI7jKdGquAT8hIL4BP7Hno4G3pC7xc8BwI23ARABINjAuBEoAmDlsuSDoA6gAe7c_-4DyAEBqAMBqgSyAU_QptoNtLIepPHLnERQRlsIHvygRhnORHlKB7zP1n9QppTfDCe0wSmdVDJBW-yQIkT1Jdha_-0CjFeoC6kEU3x6mjTGHLxT03qk46lrISc_PlttphPqMZ6WH5dxvcYKENbaGgaFkShhAZPx5XEx5okHCb_2MfqILfe0nECbrLjop3md2DjlkALRPEg0RQFQycsGtskqyli366G1QcFvE1bReVHD7NY7B7MxrJO-TJWQN86IBgGAB_qigBE&amp;num=1&amp;cid=5GjUjYiparMl09E8FLiprSLU&amp;sig=AOD64_1wv4C12N0upROc9txcwuP3A6X7KA&amp;client=ca-telegraph_uk_nonarticle&amp;adurl=http://clickserve.dartsearch.net/link/click%3Flid%3D43700005006220959%26ds_s_kwgid%3D58700000307861670%26ds_e_adid%3D55637608838%26ds_e_matchtype%3Dcontent%26ds_e_device%3Dc%26ds_url_v%3D2"; 
+google_ad.visible_url = "hpshopping.in"; 
+google_ad.log_info = "Bwih2xT2eVI7jKdGquAT8hIL4BADekLvFzwEAABABOAHIAQGoE4AB";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.line1 = "Official HP\x26#174; Online Store"; 
+google_ad.line2 = "Buy HP\x26#174; Original Toner Cartridges."; 
+google_ad.line3 = "Free Same Day Delivery. Pay COD."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = {}; 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://www.googleadservices.com/pagead/aclk?sa=L&amp;ai=CzGCcxT2eVI7jKdGquAT8hIL4BJmq2OEF0fLFsXPAjbcBEAIg2MC4ESgCYOWy5IOgDqABv8Tb4QPIAQGpAmTbqqXe5FA-qAMBqgSzAU_Qtp6Pr6sknEN4jiBQRgJSD_WpRAzdVWEMSrCOjWHhfcvpECewizydDDJBAraBK033MMtL56tPgBbzFe1IRWVimzPRVvtawHqvt_R0OicuKQZzphLqMZqSGo0WlNUKG4KnJR2FgD8-T5_o9mYwuNAbBLS1ffWCZLS1hBndsKHpS_ueEfIB6z8i4qPfqe27VV3nXdzJPFu366VEt-JOElYkj1KTvNbO8bAxqpVeqiOMZVfkiAYBgAepu6Qe&amp;num=2&amp;cid=5GjUjYiparMl09E8FLiprSLU&amp;sig=AOD64_256Rz5xqGOHQILNK0QTAuey2THrQ&amp;client=ca-telegraph_uk_nonarticle&amp;adurl=http://www.stellarinfo.co.in/kolkata/"; 
+google_ad.visible_url = "www.stellarinfo.co.in/File-Recovery"; 
+google_ad.log_info = "Bwih2xT2eVI7jKdGquAT8hIL4BADekLvFzwEAABABOAHIAQGoE4AB";
+google_ad.activeview_js_immediate_enabled = "true";
+google_ad.line1 = "Recover/Repair Data Files"; 
+google_ad.line2 = "We Recover 100% data from Lost \x26amp;"; 
+google_ad.line3 = "Corrupted files. Free consultation"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_info.feedback_url = "https://www.google.com/url?ct\x3dabg\x26q\x3dhttps://www.google.com/adsense/support/bin/request.py%3Fcontact%3Dabg_afc%26url%3Dhttp://www.telegraph.co.uk/culture/harry-potter/11000405/Harry-Potter-covers-then-and-now.html%26gl%3DIN%26hl%3Den%26client%3Dca-telegraph_uk_nonarticle%26hideleadgen%3D1%26ai0%3DCruAMxT2eVI7jKdGquAT8hIL4BP7Hno4G3pC7xc8BwI23ARABINjAuBEoAmDlsuSDoA6gAe7c_-4DyAEBqAMBqgSyAU_QptoNtLIepPHLnERQRlsIHvygRhnORHlKB7zP1n9QppTfDCe0wSmdVDJBW-yQIkT1Jdha_-0CjFeoC6kEU3x6mjTGHLxT03qk46lrISc_PlttphPqMZ6WH5dxvcYKENbaGgaFkShhAZPx5XEx5okHCb_2MfqILfe0nECbrLjop3md2DjlkALRPEg0RQFQycsGtskqyli366G1QcFvE1bReVHD7NY7B7MxrJO-TJWQN86IBgGAB_qigBE%26ai1%3DCzGCcxT2eVI7jKdGquAT8hIL4BJmq2OEF0fLFsXPAjbcBEAIg2MC4ESgCYOWy5IOgDqABv8Tb4QPIAQGpAmTbqqXe5FA-qAMBqgSzAU_Qtp6Pr6sknEN4jiBQRgJSD_WpRAzdVWEMSrCOjWHhfcvpECewizydDDJBAraBK033MMtL56tPgBbzFe1IRWVimzPRVvtawHqvt_R0OicuKQZzphLqMZqSGo0WlNUKG4KnJR2FgD8-T5_o9mYwuNAbBLS1ffWCZLS1hBndsKHpS_ueEfIB6z8i4qPfqe27VV3nXdzJPFu366VEt-JOElYkj1KTvNbO8bAxqpVeqiOMZVfkiAYBgAepu6Qe\x26usg\x3dAFQjCNH2HRtZiPDyWFkXt9yEye21-oZQMg";
+var google_attribution_text = "AdChoices";
+var google_is_rtl = false;
+if (window.google_ad_request_done) {
+google_ad_request_done(google_ads);
+}
+if (window.google_radlink_request_done) {
+google_radlink_request_done(google_radlinks);
+}
+}

@@ -1,0 +1,5 @@
+var phpadsbanner = '';
+
+phpadsbanner += '<'+'script type="text/javascript">\n $(document).ready(function() {\n    $(\'body\').css({\'cursor\':\'pointer\', \'background-image\':\'url("http://cdn2.gsmarena.com/vv/tt/publicitas/skin-Flipkart_Moto_Dec.jpg")\', \'background-color\':\'#7a5133\'});\n    $(\'body\').attr(\'id\', \'cloudx\');\n    $(\'body\').click(function(event) {\n        if (event.target == event.currentTarget)\n            window.open(\'http://a.gsmarena.com/adclick.php?bannerid=2024&zoneid=158&source=&dest=http%3A%2F%2Fwww.flipkart.com%2Fmobiles%2Fpr%3Fp%255B%255D%3Dfacets.price_range%25255B%25255D%253DRs.%252B10001%252B-%252BRs.%252B18000%26sid%3Dtyy%252C4io%26q%3Dmoto%2Bg%26ref%3D863c58ba-d2dd-415d-8f01-094937dc357d%26disp%3D1012403074447055225036028091324O196\');\n    });\n\n    $(\'#outer, #header, #footer\').hover(function() {\n        $(\'body\').css(\'cursor\', \'auto\');\n    }, function() {\n        $(\'body\').css(\'cursor\', \'pointer\');\n    });\n});\n\n<'+'/script>';
+
+document.write(phpadsbanner);

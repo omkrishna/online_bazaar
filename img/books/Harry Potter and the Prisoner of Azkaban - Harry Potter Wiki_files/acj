@@ -1,0 +1,25 @@
+OX_3077049848({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://ox-d.pubgears.com/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"http://us-u.openx.net/w/1.0/pd?plm=6&ph=ae4d7e39186b2c60549a38dee59c19f17efcd706",
+    "adunits" : [
+      {
+        "auid":"537277057",
+        "chain":[
+          {
+            "is_fallback":0,
+            "ad_id":"537552466",
+            "width":"728",
+            "height":"90",
+            "html":"<script type=\"text/javascript\" src=\"http://tags.pubgears.com/wikiat5/row/728x90/openx\"></script>\n",
+            "target":"_blank",
+            "ts":"1fHJpZD04N2U4NWVhNi1iZDQxLTRkNTctOTM3OC1mZDA4ODQ4NjZmMDN8cnQ9MTQxOTY1Njg2MHxhdWlkPTUzNzI3NzA1N3xhdW09RE1JRC5XRUJ8c2lkPTUzNzE2MzQ5MHxwdWI9NTM3MTAyNDI3fHBjPVVTRHxyYWlkPWZkMDFlNjY4LTA0ZjUtNGU2My1hZWM1LWMzNTg3NDkxOGY5MHxhaWQ9NTM3NTUyNDY2fHQ9NHxhcz03Mjh4OTB8bGlkPTUzNzM1NTM3MXxvaWQ9NTM3MjI4MDI2fHA9MjkwfHByPTI5MHxhZHY9NTM3MTAyNDI2fGFjPVVTRHxwbT1QUklDSU5HLkNQTXxibT1CVVlJTkcuTk9OR1VBUkFOVEVFRHx1cj1Ja0kxR2tqM0NS",
+            "type":"html",
+            "ad_url":"<script type=\"text/javascript\" src=\"http://tags.pubgears.com/wikiat5/row/728x90/openx\"></script>\n"
+          }
+        ]
+      }
+    ]
+  }
+});

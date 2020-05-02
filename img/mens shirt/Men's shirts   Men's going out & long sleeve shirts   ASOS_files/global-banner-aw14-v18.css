@@ -1,0 +1,482 @@
+/** 
+    Owner: www.asos.com 
+    Theme: creative-generic.css 
+    Description: Sets font face for the creative pages 
+    Author: ASOS Creative coding team 
+    Media: Screen 
+*/
+
+/********************************/
+
+/* GLOBAL BANNER */
+
+.content-panel { clear: both; }
+
+/* ensures content displays below the global banner */
+#globalBanner { width: 976px; border: none; overflow: hidden; height: 42px; }
+#globalBanner { margin-bottom: 3px; }
+#globalBanner .men-link, #globalBanner .women-link { position: absolute; top: 0; }
+#globalBanner .women-link { left: 473px; }
+#globalBanner .men-link { left: 548px; }
+#globalBanner a { float: left; }
+
+/********************************/
+
+/* NEWSLETTER */
+
+.site-content .newsletter a { font-weight: inherit; }
+
+/********************************/
+
+/* BRAND LOGOS */
+
+#category-banner { width: 768px; background: url("http://images.asos.com/brandlogos/banner-assets/banner-bg-bottom.png") no-repeat 0 bottom; padding: 0 0 14px 0; text-align: center; }
+#category-banner .banner-header { background: url("http://images.asos.com/brandlogos/banner-assets/banner-bg-top.png") no-repeat 0 top; }
+#category-banner .logo { padding: 14px 25px 20px 25px; border-bottom: 1px dotted #b5b5b5; }
+#category-banner p { padding: 0 100px; margin: 14px 0; font: 11px Georgia, "Times New Roman", Times, serif; line-height: 14px; }
+#category-banner p a { color: #000; text-decoration: underline; }
+#category-banner p a:hover { text-decoration: none; }
+#category-banner p strong { font-weight: bold; }
+#category-banner p em { font-style: italic; }
+
+/********************************/
+
+/* FB BUTTON FIX */
+
+.creative-panel #socialSharing #fb_xdm_frame_http, .creative-panel #socialSharing #fb_xdm_frame_https { border: none; width: 0; height: 0; }
+
+/********************************/
+
+/* TEST PAGE FIX FOR TOOLTIP */
+
+.creative-panel #globalBanner, .creative-panel #globalBanner-fc, .creative-panel #globalBanner-extra, .creative-panel #globalBanner-extra2 { height: 300px; }
+
+/********************************/
+
+/* GLOBAL BANNER - 3 BOX */
+
+ul#globalBanner { overflow: visible; }
+ul#globalBanner li { height: 37px; cursor: default; width: 305px; position: relative; margin-left: 7px; margin-top: 5px; display: inline-block; zoom: 1; *dispay: inline; overflow: visible; float: left; text-align: center; background: #bcbcbc; }
+ul#globalBanner li.box01 { margin-left: 4px; }
+ul#globalBanner li.box02 { width: 346px; }
+ul#globalBanner li.box02 .link, ul#globalBanner li.box02 .no-link { width: 345px; }
+ul#globalBanner li a, ul#globalBanner li a:hover { text-decoration: none; }
+ul#globalBanner li .tooltip a { color: #000; }
+ul#globalBanner li .link, ul#globalBanner li .no-link { text-align: center; position: absolute; top: -3px; left: -4px; height: 25px; width: 304px; display: block; float: none; border: 1px solid #b2b2b2; background: #fff; font-size: 10px; font-family: Tahoma, Arial, Sans-serif; color: #020202; text-decoration: none; padding-top: 10px; text-transform: uppercase; letter-spacing: 1px; line-height: 13px; }
+ul#globalBanner li .double { padding-top: 4px; height: 31px; }
+ul#globalBanner li .in-link { display: inline; float: none; margin-left: 5px; }
+ul#globalBanner li .link .txt-top { text-transform: none; font-size: 11px; }
+/* text over two lines */
+ul#globalBanner li .link .txt-bottom { color: #666; font-size: 8px; }
+ul#globalBanner li .no-link .txt-bottom { color: #666; font-size: 8px; letter-spacing: 1px; }
+ul#globalBanner li .link .txt-bottom .code, ul#globalBanner li .no-link .txt-bottom .code { color: #000; }
+/* ul#globalBanner li .link .txt-bottom .blue { color:#eb2e28; font-size:inherit;} */
+ul#globalBanner li .no-link .txt-bottom.white { color: #fff; }
+ul#globalBanner li .link.sns, ul#globalBanner li .no-link.sns { background-color: #d1d3eb; }
+ul#globalBanner li .link.au-stu, ul#globalBanner li .no-link.au-stu { background-color: #fe8012; }
+ul#globalBanner li .link.ru-promo, ul#globalBanner li .no-link.ru-promo { background-color: #3999cc; color: #fff; }
+ul#globalBanner li .lwrcase { text-transform: none; }
+ul#globalBanner li.half { width: 481px; }
+/* 1/2 the width */
+ul#globalBanner li.half .link, ul#globalBanner li.half .no-link { width: 480px; }
+ul#globalBanner li.wide { width: 643px; }
+/* 2/3 the width */
+ul#globalBanner li.wide .link { width: 642px; }
+ul#globalBanner .highlight { color: #f40000; }
+ul#globalBanner .highlight-sale { color: #fceb09; }
+/* Special colors */
+ul#globalBanner li .promo-140721 { background: #5dcbfd; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .promo-140721 .in-link { color: #fff; }
+ul#globalBanner li .promo-140915 { background: #35a776; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .promo-140915 .in-link { color: #fff; }
+ul#globalBanner li .promo-general { background: #cff8f9; border-color: #bcbcbc; }
+ul#globalBanner li .sands { background: #0d4ad5; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .sands:hover, ul#globalBanner li .promo-140721:hover { color: #fff; }
+ul#globalBanner li .student { background: #f7d559; border-color: #bcbcbc; }
+ul#globalBanner li .sale { background: #f73031; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .sale .in-link { color: #fff; }
+ul#globalBanner li .sale-70 { background: #2cb138; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .sale-70 .in-link { color: #fff; }
+ul#globalBanner li .sale-70-us { background: #1d62d4; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .sale-70-us .in-link { color: #fff; }
+ul#globalBanner li .sale-70-us-4thjuly { background: #1d62d4; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .sale-70-us-4thjuly .in-link { color: #fff; }
+ul#globalBanner li .us-4thjuly { background: #372fae; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .us-4thjuly .in-link { color: #fff; }
+ul#globalBanner li .sale-70-new-us { background: #605ca8; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .sale-70-new-us .in-link { color: #fff; }
+ul#globalBanner li .au-promo { background: #96dcf6; border-color: #bcbcbc; }
+ul#globalBanner li .au-promo .in-link { color: #000; }
+ul#globalBanner li .sale-fc { background: #f19f1e; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .sale-fc .in-link { color: #fff; }
+ul#globalBanner li .ndd-promo { background: #6db9ff; border-color: #bcbcbc; color: #fff; }
+ul#globalBanner li .ndd-promo .in-link { color: #fff; }
+ul#globalBanner li .ps .in-link { color:#000; }
+/* tooltip */
+.no-rgba ul#globalBanner li div.tooltip:before { border-color: transparent transparent #F2F2F2; }
+ul#globalBanner li div.tooltip:before { border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #f2f2f2; border-style: solid; border-width: 5px; content: " "; height: 0; left: 50%; position: absolute; top: -10px; width: 0; }
+ul#globalBanner li div.tooltip { background: none repeat scroll 0 0 #F2F2F2; box-shadow: 3px 4px 0 0 rgba(0, 0, 0, 0.2); color: #242424; display: block; font-family: Tahoma,Sans-Serif; font-size: 0.85em; text-transform: none; opacity: 0; padding: 10px; pointer-events: none; position: absolute; top: 34px; transform: translateY(-10px); -moz-transform: translateY(-10px); -webkit-transform: translateY(-10px); -ms-transform: translateY(-10px); -o-transform: translateY(-10px); transition: all 0.25s ease-out 0s; -moz-transition: all 0.25s ease-out 0s; -webkit-transition: all 0.25s ease-out 0s; -ms-transition: all 0.25s ease-out 0s; -o-transition: all 0.25s ease-out 0s; z-index: 12; left: 0; width: 92%; }
+ul#globalBanner li.is-hover:hover div.tooltip { opacity: 1; pointer-events: auto; transform: translateY(0px); -webkit-transform: translateY(0px); -ms-transform: translateY(0px); -o-transform: translateY(0px); -moz-transform: translateY(0px); }
+/* IT tooltip font-size fix */
+ul#globalBanner li div.tooltip { font-size: 1em; top: 32px; }
+ul#globalBanner li div.tooltip a { text-decoration: underline; float: none; }
+#globalBanner li.box-content.box-left .tooltip { top: 38px; width: 50%; left: 25%; }
+#globalBanner li.box-content.box-right .tooltip { top: 38px; }
+#globalBanner li.box-content.box-right .tooltip:before { left: 142px; }
+/* ie7 & ie8 tweeks */
+.ie7 ul#globalBanner { position: relative; z-index: 10; }
+.ie7 ul#globalBanner li.half, .ie8 ul#globalBanner li.half { width: 481px; }
+.ie7 ul#globalBanner li.half .link, .ie8 ul#globalBanner li.half .link { width: 480px; }
+/*.ie7 ul#globalBanner li .in-link:hover, 
+.ie7 ul#globalBanner li .in-link:visited,
+.ie7 ul#globalBanner li .in-link:active, 
+.ie7 ul#globalBanner li .in-link:link  { background:#f40000!important; }*/
+.ie7 ul#globalBanner li.premier .in-link:hover, .ie7 ul#globalBanner li.premier .in-link:visited, .ie7 ul#globalBanner li.premier .in-link:active, .ie7 ul#globalBanner li.premier .in-link:link { background: black !important; }
+.lt-ie9 ul#globalBanner li div.tooltip { display: none; }
+.lt-ie9 ul#globalBanner li:hover div.tooltip { display: block; }
+.ie7 nav#group-navigation ul li div.tooltip, .ie8 nav#group-navigation ul li div.tooltip { Filter: progid:DXImageTransform.Microsoft.Shadow(color='#707070',direction='135',strength='2'); }
+
+
+
+/********************************/
+
+/* GLOBAL BANNER GRAPHIC - 24/11/14 XMAS DELIVERY*/
+
+#globalBanner.v2box-141124 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141124 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141124 li.box-content .link.double, #globalBanner.v2box-141124 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px; background: #fff; color: #020202; }
+#globalBanner.v2box-141124 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: #31baef; }
+#globalBanner.v2box-141124 li.box-right { width: 306px; height: 40px;background-color:#25b770; }
+#globalBanner.v2box-141124 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141124 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141124 li.box-content.box-left .link strong { color:#FFF;display: block; position: absolute; top: 8px; left: 8px; min-width: 87px; width: auto; height: 20px; border:solid 2px #FFF; }
+#globalBanner.v2box-141124 li.box-content.box-left .link-right strong { left: auto; right: 8px; }
+#globalBanner.v2box-141124 li.box-content.box-left .promo-message { text-transform:uppercase;position: absolute; left: 50%; top: 10px; width: 343px; margin-left: -172px; height: 22px; font-size: 20px; line-height: 19px; color: #fdf564; }
+#globalBanner.v2box-141124 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.v2box-141124 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#FFF;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141124 li.box-content.box-left .promo-message .cd-141124 { color:#ffff04;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141124 li.box-content .tooltip { top: 38px; width: 67%; left: 100px; }
+
+/*XMAS DELIVERY*/
+
+#globalBanner.xmas li.box-content .link.double, #globalBanner.xmas li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141124-Global-Banner/xmas-delivery.png') #25b770; }
+#globalBanner.xmas li.box-right .del-message {display: inline-block; width: 240px; margin: 0 40px 0 auto; font-weight: bold;}
+.no-rgba ul#globalBanner.v2box-141124.ru li div.tc:before { border-color: transparent transparent #F2F2F2; }
+ul#globalBanner.v2box-141124.ru li div.tc:before { border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) #f2f2f2; border-style: solid; border-width: 5px; content: " "; height: 0; left: 50%; position: absolute; top: -10px; width: 0; }
+#globalBanner.v2box-141124.ru li.box-content .tc { background: none repeat scroll 0 0 #F2F2F2; box-shadow: 3px 4px 0 0 rgba(0, 0, 0, 0.2); color: #242424; display: block; font-family: Tahoma,Sans-Serif; font-size: 1em; text-transform: none; opacity: 0; padding: 10px; pointer-events: none; position: absolute; top: 34px; transform: translateY(-10px); -moz-transform: translateY(-10px); -webkit-transform: translateY(-10px); -ms-transform: translateY(-10px); -o-transform: translateY(-10px); transition: all 0.25s ease-out 0s; -moz-transition: all 0.25s ease-out 0s; -webkit-transition: all 0.25s ease-out 0s; -ms-transition: all 0.25s ease-out 0s; -o-transition: all 0.25s ease-out 0s; z-index: 12; left: 4px; width: 90%;}
+#globalBanner.v2box-141124.ru li:hover.box-content .tc {opacity: 1; pointer-events: auto; transform: translateY(0px); -webkit-transform: translateY(0px); -ms-transform: translateY(0px); -o-transform: translateY(0px); -moz-transform: translateY(0px);}
+
+/********************************/
+
+
+/* GLOBAL BANNER GRAPHIC - 28/11/14*/
+
+#globalBanner.v2box-141128 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141128 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141128 li.box-content .link.double, #globalBanner.v2box-141124 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.v2box-141128 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: #000; }
+#globalBanner.v2box-141128 li.box-right { width: 306px; height: 40px;background-color:#25b770; }
+#globalBanner.v2box-141128 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141128 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141128 li.box-content.box-left .link strong { color:#FFF;display: block; position: absolute; top: 8px; left: 8px; min-width: 87px; width: auto; height: 20px; border:solid 2px #FFF; }
+#globalBanner.v2box-141128 li.box-content.box-left .link-right strong { left: auto; right: 8px; }
+#globalBanner.v2box-141128 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 2px; width: 470px; margin-left: -172px; height: 22px; font-size: 16px; line-height: 17px; color: #fff; text-transform: uppercase; }
+#globalBanner.v2box-141128 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.v2box-141128 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#FFF;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141128 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141128 li.box-content.box-left .promo-message .highlight { color:#fef45e;font-weight:bold;text-transform:uppercase; background: transparent url("http://images.asos.com/htmlpages/Global-Banner/underline-yellow.gif") repeat-x 0 100%; }
+
+/*XMAS DELIVERY*/
+
+#globalBanner.xmas li.box-content .link.double, #globalBanner.xmas li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141124-Global-Banner/xmas-delivery.png') #25b770; }
+#globalBanner.xmas li.box-right .del-message {display: inline-block; width: 240px; margin: 0 40px 0 auto; font-weight: bold;}
+
+/********************************/
+
+
+/* GLOBAL BANNER GRAPHIC - 02/12/14*/
+
+#globalBanner.v2box-141202 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141202 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141202 li.box-content .link.double, #globalBanner.v2box-141124 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.v2box-141202 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: #b89ffb; }
+#globalBanner.v2box-141202 li.box-right { width: 306px; height: 40px;background-color:#25b770; }
+#globalBanner.v2box-141202 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141202 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141202 li.box-content.box-left .link strong { color:#000; display: block; position: absolute; top: 8px; left: 8px; min-width: 87px; width: auto; height: 20px; border:solid 2px #000; }
+#globalBanner.v2box-141202 li.box-content.box-left .link-right strong { left: auto; right: 8px; }
+#globalBanner.v2box-141202 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 10px; width: 470px; margin-left: -172px; height: 22px; font-size: 20px; line-height: 17px; color: #000; text-transform: uppercase; }
+#globalBanner.v2box-141202 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.v2box-141202 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#FFF;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141202 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141202 li.box-content.box-left .promo-message .highlight { color:#fef45e;font-weight:bold;text-transform:uppercase; background: transparent url("http://images.asos.com/htmlpages/Global-Banner/underline-yellow.gif") repeat-x 0 100%; }
+
+
+/*XMAS DELIVERY*/
+
+#globalBanner.xmas li.box-content .link.double, #globalBanner.xmas li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141124-Global-Banner/xmas-delivery.png') #25b770; }
+#globalBanner.xmas li.box-right .del-message {display: inline-block; width: 240px; margin: 0 40px 0 auto; font-weight: bold;}
+
+/* GLOBAL BANNER GRAPHIC - 04/12/14 NIKI15 PROMO DE*/
+#globalBanner.v3box-141204.de li.box-content .link.single, #globalBanner.xmas li.box-content .no-link.single {background: #25b770; color: #fff; font-weight: bold;}
+ul#globalBanner.v3box-141204 li .promo-141204 { background: #b89ffb; border-color: #bcbcbc; }
+ul#globalBanner.v3box-141204 li .promo-141204 .in-link {color: #000;}
+ul#globalBanner.v3box-141204 li .highlighted {color: red;}
+ul#globalBanner.v3box-141204 li .in-link {color: #000;}
+
+/********************************/
+
+
+/* GLOBAL BANNER GRAPHIC - 07/12/14*/
+
+#globalBanner.v2box-141207 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141207 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141207 li.box-content .link.double, #globalBanner.v2box-141124 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.v2box-141207 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: #20baef; }
+#globalBanner.v2box-141207 li.box-right { width: 306px; height: 40px;background-color:#25b770; }
+#globalBanner.v2box-141207 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141207 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141207 li.box-content.box-left .link strong { color:#000; display: block; position: absolute; top: 8px; left: 8px; min-width: 87px; width: auto; height: 20px; border:solid 2px #000; }
+#globalBanner.v2box-141207 li.box-content.box-left .link-right strong { left: auto; right: 8px; }
+#globalBanner.v2box-141207 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 12px; width: 470px; margin-left: -172px; height: 22px; font-size: 18px; line-height: 17px; color: #000; text-transform: uppercase; }
+#globalBanner.v2box-141207 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.v2box-141207 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#FFF;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141207 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141207 li.box-content.box-left .promo-message .highlight { color: #000; background: transparent url("http://images.asos.com/htmlpages/141208-Global-Banner/underline-black.gif") repeat-x 0 90%; }
+
+
+/*XMAS DELIVERY*/
+
+#globalBanner.xmas li.box-content .link.double, #globalBanner.xmas li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141124-Global-Banner/xmas-delivery.png') #25b770; }
+#globalBanner.xmas li.box-right .del-message {display: inline-block; width: 240px; margin: 0 40px 0 auto; font-weight: bold;}
+
+/********************************/
+
+/* GLOBAL BANNER GRAPHIC - 08/12/14*/
+
+#globalBanner.v2box-141208 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141208 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141208 li.box-content .link.double, #globalBanner.v2box-141124 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.v2box-141208 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: #7cfdde; }
+#globalBanner.v2box-141208 li.box-right { width: 306px; height: 40px;background-color:#25b770; }
+#globalBanner.v2box-141208 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141208 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141208 li.box-content.box-left .link strong { color:#000; display: block; position: absolute; top: 8px; left: 8px; min-width: 87px; width: auto; height: 20px; border:solid 2px #000; }
+#globalBanner.v2box-141208 li.box-content.box-left .link-right strong { left: auto; right: 8px; }
+#globalBanner.v2box-141208 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 10px; width: 470px; margin-left: -172px; height: 22px; font-size: 20px; line-height: 17px; color: #000; text-transform: uppercase; }
+#globalBanner.v2box-141208 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.v2box-141208 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#FFF;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141208 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141208 li.box-content.box-left .promo-message .highlight { color:#fef45e;font-weight:bold;text-transform:uppercase; background: transparent url("http://images.asos.com/htmlpages/Global-Banner/underline-yellow.gif") repeat-x 0 100%; }
+
+
+/*XMAS DELIVERY*/
+
+#globalBanner.xmas li.box-content .link.double, #globalBanner.xmas li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141124-Global-Banner/xmas-delivery.png') #25b770; }
+#globalBanner.xmas li.box-right .del-message {display: inline-block; width: 240px; margin: 0 40px 0 auto; font-weight: bold;}
+
+/********************************/
+
+/* GLOBAL BANNER GRAPHIC - 13/12/14*/
+
+#globalBanner.v2box-141213 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141213 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141213 li.box-content .link.double, #globalBanner.v2box-141124 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.v2box-141213 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: #b79efa; }
+#globalBanner.v2box-141213 li.box-left .blinkme { color: #fdf564; }
+#globalBanner.v2box-141213 li.box-right { width: 306px; height: 40px;background-color:#25b770; }
+#globalBanner.v2box-141213 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141213 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141213 li.box-content.box-left .link strong { color:#000; display: block; position: absolute; top: 8px; left: 8px; min-width: 87px; width: auto; height: 20px; border:solid 2px #000; }
+#globalBanner.v2box-141213 li.box-content.box-left .link-right strong { left: auto; right: 8px; }
+#globalBanner.v2box-141213 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 0; width: 470px; margin-left: -172px; height: 22px; font-size: 16px; line-height: 17px; color: #000; text-transform: uppercase; }
+#globalBanner.v2box-141213 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.v2box-141213 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#000;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141213 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141213 li.box-content.box-left .promo-message .highlight { color:#fef45e;font-weight:bold;text-transform:uppercase; background: transparent url("http://images.asos.com/htmlpages/Global-Banner/underline-yellow.gif") repeat-x 0 100%; }
+
+/* Nuudge down us and uk as they are on one line */
+#globalBanner.uk.v2box-141213 li.box-content.box-left .promo-message { top: 8px; }
+#globalBanner.us.v2box-141213 li.box-content.box-left .promo-message { top: 8px; }
+
+/* Russia Banner bg is blue */
+#globalBanner.ru.v2box-141213 li.box-left { background-color:#43cdfe; }
+#globalBanner.ru.v2box-141213 li.box-content.box-left .promo-message .line2 {color:#000;}
+
+/*XMAS DELIVERY*/
+
+#globalBanner.xmas li.box-content .link.double, #globalBanner.xmas li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141124-Global-Banner/xmas-delivery.png') #25b770; }
+#globalBanner.xmas li.box-right .del-message {display: inline-block; width: 240px; margin: 0 40px 0 auto; font-weight: bold;}
+
+/********************************/
+
+/* GLOBAL BANNER GRAPHIC - 15/12/14 */
+
+#globalBanner.v2box-141215 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141215 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141215 li.box-content .link.double, #globalBanner.v2box-141124 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.v2box-141215 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: #fff64f; }
+#globalBanner.v2box-141215 li.box-right { width: 306px; height: 40px; background-color:#25b770; }
+#globalBanner.v2box-141215 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141215 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141215 li.box-content.box-left .link strong { color:#000; display: block; position: absolute; top: 8px; left: 8px; min-width: 87px; width: auto; height: 20px; border:solid 2px #000; }
+#globalBanner.v2box-141215 li.box-content.box-left .link-right strong { left: auto; right: 8px; }
+#globalBanner.v2box-141215 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 10px; width: 470px; margin-left: -172px; height: 22px; font-size: 20px; line-height: 17px; color: #000; text-transform: uppercase; }
+#globalBanner.v2box-141215 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.v2box-141215 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#FFF;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141215 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141215 li.box-content.box-left .promo-message .highlight { color:#fef45e;font-weight:bold;text-transform:uppercase; background: transparent url("http://images.asos.com/htmlpages/Global-Banner/underline-yellow.gif") repeat-x 0 100%; }
+
+/* New AU specific css changes */
+#globalBanner.au.v2box-141215 li.box-left { background-color:#25b770; }
+#globalBanner.au.v2box-141215 li.box-content.box-left .promo-message { font-size: 15px; top:3px;color:#fff; text-align:center;}
+#globalBanner.au.v2box-141215 li.box-left .redcolor {color:#000;}
+#globalBanner.au.v2box-141215 li.box-right { background:#fff64f }
+#globalBanner.au.v2box-141215 li.box-content.box-right .promo-message { position: absolute; left: 41%; top: 3px; width: 302px; margin-left: -123px; height: 22px; font-size: 15px; line-height: 16px; color: #000; text-transform: uppercase; }
+#globalBanner.au.v2box-141215 li.box-right .promo-message .rightbox-links {padding:0px 5px; margin:0px 5px; font-size: 14px; color:#000;}
+#globalBanner.au.v2box-141215 li.box-right .promo-message .rightboxlink1 {margin-left:28% }
+
+/* RU specific css changes */
+#globalBanner.ru.v2box-141215 li.box-content .link.double, #globalBanner.ru.v2box-141124 li.box-content .no-link.double {background:none;}
+#globalBanner.ru.v2box-141215 li.box-right { background:#43cdfe; }
+#globalBanner.ru.v2box-141215 li.box-right .zima {color:#fef45e; }
+
+/*XMAS DELIVERY*/
+#globalBanner.xmas li.box-content .link.double, #globalBanner.xmas li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141124-Global-Banner/xmas-delivery.png') #25b770; }
+
+/********************************/
+
+
+/* GLOBAL BANNER GRAPHIC - 17/12/14 AU Party Wear */
+
+#globalBanner.au.v2box-141217 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.au.v2box-141217 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.au.v2box-141217 li.box-content .link.double, #globalBanner.v2box-141124 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.au.v2box-141217 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: #fff64f; }
+#globalBanner.au.v2box-141217 li.box-right { width: 306px; height: 40px; background-color:#25b770; }
+#globalBanner.au.v2box-141217 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.au.v2box-141217 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.au.v2box-141217 li.box-content.box-left .link strong { color:#000; display: block; position: absolute; top: 8px; left: 8px; min-width: 87px; width: auto; height: 20px; border:solid 2px #000; }
+#globalBanner.au.v2box-141217 li.box-content.box-left .link-right strong { left: auto; right: 8px; }
+#globalBanner.au.v2box-141217 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 10px; width: 470px; margin-left: -172px; height: 22px; font-size: 20px; line-height: 17px; color: #000; text-transform: uppercase; }
+#globalBanner.au.v2box-141217 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.au.v2box-141217 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#FFF;font-weight:bold;text-transform:uppercase; }
+#globalBanner.au.v2box-141217 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.au.v2box-141217 li.box-content.box-left .promo-message .highlight { color:#fef45e;font-weight:bold;text-transform:uppercase; background: transparent url("http://images.asos.com/htmlpages/Global-Banner/underline-yellow.gif") repeat-x 0 100%; }
+
+/********************************/
+
+/* GLOBAL BANNER GRAPHIC - 18/12/14 Delivery/Prime */
+
+#globalBanner.v2box-141218 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141218 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141218 li.box-content .link.double, #globalBanner.v2box-141124 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.v2box-141218 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: url("http://images.asos.com/htmlpages/141215-Global-Banner/bg-christmas.gif") no-repeat #25b770;}
+#globalBanner.v2box-141218 li.box-right { width: 306px; height: 40px; background-color:#25b770; }
+#globalBanner.v2box-141218 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141218 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141218 li.box-content.box-left .link strong { color:#fff; display: block; position: absolute; top: 8px; left: 55px; min-width: 87px; width: auto; height: 20px; border:solid 2px #fff; }
+#globalBanner.v2box-141218 li.box-content.box-left .link-right strong { left: auto; right: 57px; }
+#globalBanner.v2box-141218 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 0; width: 370px; margin-left: -126px; padding-top: 12px; height: 30px; font-size: 19px; line-height: 17px; color: #fff; text-transform: uppercase; }
+#globalBanner.v2box-141218 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#fff;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141218 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141218 li.box-content.box-left .promo-message .highlight { color:#fef45e;font-weight:bold;text-transform:uppercase; background: transparent url("http://images.asos.com/htmlpages/Global-Banner/underline-yellow.gif") repeat-x 0 100%; }
+#globalBanner.fr.v2box-141218 li.box-content.box-left .promo-message, 
+#globalBanner.de.v2box-141218 li.box-content.box-left .promo-message,
+#globalBanner.it.v2box-141218 li.box-content.box-left .promo-message,
+#globalBanner.es.v2box-141218 li.box-content.box-left .promo-message,
+#globalBanner.au.v2box-141218 li.box-content.box-left .promo-message { position: absolute; left: 0; top: 0; width: 562px; margin-left: 50px; padding-top: 12px; height: 30px; font-size: 19px; line-height: 17px; color: #fff; text-transform: uppercase; }
+
+/********************************/
+
+
+/* GLOBAL BANNER GRAPHIC - 19/12/14 */
+
+#globalBanner.v2box-141219 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141219 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141219 li.box-content .link.double, #globalBanner.v2box-141219 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.v2box-141219 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: url("http://images.asos.com/htmlpages/141219-Global-Banner/bg.gif") no-repeat #fc414b;}
+#globalBanner.v2box-141219 li.box-right { width: 306px; height: 40px; background-color:#fff; }
+#globalBanner.v2box-141219 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141219 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141219 li.box-content.box-left .link strong { color:#fff; display: block; position: absolute; top: 8px; left: 55px; min-width: 87px; width: auto; height: 20px; border:solid 2px #fff; }
+#globalBanner.v2box-141219 li.box-content.box-left .link-right strong { left: auto; right: 55px; }
+#globalBanner.v2box-141219 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 12px; width: 372px; margin-left: -126px; height: 22px; font-size: 20px; line-height: 17px; color: #fff; text-transform: uppercase; }
+#globalBanner.v2box-141219 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.v2box-141219 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#FFF;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141219 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141219 li.box-content.box-left .promo-message .highlight { color:#fef45e;font-weight:bold;text-transform:uppercase; background: transparent url("http://images.asos.com/htmlpages/Global-Banner/underline-yellow.gif") repeat-x 0 100%; }
+
+/* AU specific css changes */
+#globalBanner.fr.v2box-141219 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: url("http://images.asos.com/htmlpages/141219-Global-Banner/bg-fr.gif") no-repeat #1f5ead;}
+
+/* FR specific css changes */
+#globalBanner.au.v2box-141219 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: url("http://images.asos.com/htmlpages/141219-Global-Banner/bg-au.gif") no-repeat #fc414b;}
+
+/* RU specific css changes */
+#globalBanner.ru.v2box-141219 li.box-content .double {background:none; top: 0;}
+#globalBanner.ru.v2box-141219 li.box-content.box-left .promo-message {font-size: 13px;}
+
+/********************************/
+
+/* GLOBAL BANNER GRAPHIC - 14/12/14 */
+
+#globalBanner.v2box-141224 li.box-content { position: relative; float: left; background: none; margin: 0; padding: 0; font-family: Futura-pt, Arial, Verdana, sans-serif; }
+#globalBanner.v2box-141224 li.box-content .link { position: relative; top: auto; left: auto; margin: 0; padding: 0; height: 38px; line-height: 38px; }
+#globalBanner.v2box-141224 li.box-content .link.double, #globalBanner.v2box-141224 li.box-content .no-link.double {font-size:10px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color: #020202; background: #fff; }
+#globalBanner.v2box-141224 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: url("http://images.asos.com/htmlpages/141224-Global-Banner/bg.gif") no-repeat 100% #1cb771;}
+#globalBanner.v2box-141224 li.box-right { width: 306px; height: 40px; background-color:#fff; }
+#globalBanner.v2box-141224 li.box-content.box-left .link { position: absolute; left: 0; width: 50%; border: none; text-transform: uppercase; color: #fff; font-size: 12px; line-height: 20px; background: none; }
+#globalBanner.v2box-141224 li.box-content.box-left .link-right { left: auto; right: 0; }
+#globalBanner.v2box-141224 li.box-content.box-left .link strong { color:#fff; display: block; position: absolute; top: 8px; left: 55px; min-width: 87px; width: auto; height: 20px; border:solid 2px #fff; }
+#globalBanner.v2box-141224 li.box-content.box-left .link-right strong { left: auto; right: 55px; }
+#globalBanner.v2box-141224 li.box-content.box-left .promo-message { position: absolute; left: 41%; top: 10px; width: 372px; margin-left: -126px; height: 22px; font-size: 17px; line-height: 17px; color: #fff; text-transform: uppercase; }
+#globalBanner.v2box-141224 li.box-content.box-left .promo-message.double {top: 0;}
+#globalBanner.v2box-141224 li.box-content.box-left .promo-message-2 { position: absolute; left: 50%; top: 21px; width: 343px; margin-left: -172px; height: 18px; font-size: 13px; line-height: 19px; color: #000; }
+#globalBanner.v2box-141224 li.box-content.box-left .promo-message .line2 { display: block; font-size: 14px; line-height: 15px;color:#FFF;font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141224 li.box-content.box-left .promo-message .upper  {font-weight:bold;text-transform:uppercase; }
+#globalBanner.v2box-141224 li.box-content.box-left .promo-message .highlight { color:#fef45e;font-weight:bold;text-transform:uppercase; background: transparent url("http://images.asos.com/htmlpages/Global-Banner/underline-yellow.gif") repeat-x 0 100%; }
+
+/* au specific css changes */
+#globalBanner.au.v2box-141224 li.box-left { width: 665px; height: 40px; margin-right: 3px; background: url("http://images.asos.com/htmlpages/141224-Global-Banner/bg-au.gif") no-repeat 100% #1cb771;}
+
+#globalBanner.ru.v2box-141224 li.box-content .double {background:none; top: 0;}
+#globalBanner.ru.v2box-141224 li.box-content.box-left .promo-message {font-size: 13px;}
+
+/********************************/
+
+/*XMAS - N.Y.E. DELIVERY*/
+#globalBanner.xmas li.box-content .link.double, #globalBanner.xmas li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141124-Global-Banner/xmas-delivery.png') #25b770; }
+#globalBanner.xmas li.box-right .del-message {display: inline-block; width: 240px; margin: 0 40px 0 auto; font-weight: bold;}
+#globalBanner.nye li.box-content .link.double, #globalBanner.nye li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141219-Global-Banner/star-delivery.png') #25b770; }
+#globalBanner.nye li.box-right .del-message {display: inline-block; width: 240px; margin: 0 40px 0 auto; font-weight: bold;}
+#globalBanner.nye.es li.box-content .link.double, #globalBanner.nye.es li.box-content .no-link.double {font-size:12px; left: 0; top: 0; height: 32px; line-height: 13px; padding-top: 6px;color:#fff; background: url('http://images.asos.com/htmlpages/141219-Global-Banner/crown-delivery.png') #25b770; }
+/********************************/
+
+
+/********WEATHER WARNING************/
+
+#globalBanner .warning {width: 976px; height: 122px; background: url('http://images.asos.com/htmlpages/Global-Banner-Weather-Warning/bg.gif') repeat-x; color: #000; text-align: center; margin: 10px 0 3px 0;}
+#globalBanner .warning .warning-container {display: block; width: 936px; height: 92%; padding: 0 20px;}
+#globalBanner .warning .warning-title {font-size: 28px; margin: 10px 0 5px 0;}
+#globalBanner .warning .warning-copy {width: 80%; margin: 0 auto; font-size: 14px; line-height: 16px;}
+#globalBanner .warning .warning-link {float: none; color: #000; text-decoration: underline;}
+#globalBanner .warning .warning-link:hover {opacity: 0.5;}
+
+/***********************************/
+
+/* MINIBAG */
+.minibag { width: 284px; height: 35px; border-top: 1px solid #bababa; background: #fff; }
+.minibag p { width: 100%; height: 15px; margin: 10px auto; text-align: center; text-transform: uppercase; font-size: 1.1em; }
+.minibag p.double { margin: 5px; }
+.minibag p.double .small { font: 10px Tahoma, Arial, Sans-Serif; color: #666; display: block; text-transform: none; }
+.minibag p.double .small a { font: 10px Tahoma, Arial, Sans-Serif; color: #666; display: block; text-transform: none; }
+
+/********************************/
+/* FREE DELIVERY LP - CONTINGENCY MESSAGE*/
+/* NO NDD MESSAGE FOR ALL COUNTRIES */
+
+.creative .no-ndd-message { display: none !important; width: 947px; padding: 5px 0 5px 0; font-family: futura-pt,arial,sans-serif; font-size: 15px; line-height:15px; font-weight: normal; color: #000; border: 2px solid #f40000; text-align: center; }
+.creative .contingency-msg { width: 938px; border: 2px solid red; padding: 5px; color: #000; font-family: futura-pt, arial, sans-serif; font-size: 16px; line-height: 17px; }
+.contingency-msg2 { text-align: center; display: block; margin-bottom: 14px; width: 955px; height: 34px; color: #000; border: 1px solid #000; font-family: futura-pt,arial,sans-serif; font-size: 15px; text-transform: uppercase; padding: 9px 7px 2px 7px; line-height: 16px; }
+ 

@@ -1,0 +1,167 @@
+.fade { opacity: 0; -webkit-transition: opacity 0.15s linear; transition: opacity 0.15s linear; }
+
+.fade.in { opacity: 1; }
+
+.collapse { display: none; }
+
+.collapse.in { display: block; }
+
+.collapsing { position: relative; height: 0; overflow: hidden; -webkit-transition: height 0.35s ease; transition: height 0.35s ease; }
+
+.notification-background { *zoom: 1; filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF6B0000', endColorstr='#FF6EFFFF'); background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjQyIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.42) 0%, rgba(255, 255, 255, 0.1) 100%); background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.42) 0%, rgba(255, 255, 255, 0.1) 100%); background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.42) 0%, rgba(255, 255, 255, 0.1) 100%); background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.42) 0%, rgba(255, 255, 255, 0.1) 100%); z-index: 9999; height: 100%; position: fixed; top: 0; width: 100%; }
+
+#open-notification { position: fixed; background:#e3e3e3; overflow: hidden; *zoom: 1; padding: 25px; left: 0; top: 0; right: 0; z-index: 9999; width: 100%; }
+#open-notification, #open-notification * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media (min-width: 50.063em) { #open-notification { width: 603px; left: 50%; margin: 0 0 0 -301px; right: inherit; } }
+#open-notification .helper { position: relative; }
+#open-notification .close { position: absolute; top: 16px; right: 13px; cursor: pointer; }
+#open-notification .close:before { font-family: 'samsungIcon'; font-size: 39px; font-size: 2.4375rem; margin-right: 10px;  color:#000; }
+#open-notification .close:hover { text-decoration: none; }
+#open-notification h3 { font-family: 'SamsungIFRg', Arial, sans-serif; font-weight: normal; font-size: 24px; font-size: 1.5rem; margin: 0 0 20px; width: 91%; }
+@media (min-width: 50.063em) { #open-notification h3 { font-size: 36px; font-size: 2.25rem; } }
+#open-notification p { font-family: 'SamsungIFRg', Arial, sans-serif; font-weight: normal; font-size: 13px; font-size: 0.8125rem; margin: 0 0 20px; }
+@media (min-width: 50.063em) { #open-notification p { font-size: 20px; font-size: 1.25rem; } }
+
+.tooltip { position: absolute; z-index: 1030; display: block; font-size: 12px; line-height: 1.4; opacity: 0; filter: alpha(opacity=0); visibility: visible; }
+
+.tooltip.in { opacity: 0.9; filter: alpha(opacity=90); }
+
+.tooltip.top { padding: 5px 0; margin-top: -3px; }
+
+.tooltip.right { padding: 0 5px; }
+html.ltr .tooltip.right { margin-left: 3px; }
+html.rtl .tooltip.right { margin-right: 3px; }
+
+.tooltip.bottom { padding: 5px 0; margin-top: 3px; }
+
+.tooltip.left { padding: 0 5px; }
+html.ltr .tooltip.left { margin-left: -3px; }
+html.rtl .tooltip.left { margin-right: -3px; }
+
+.tooltip-inner { max-width: 200px; padding: 3px 8px;  color:#FFF; text-align: center; text-decoration: none; background-color:#e5e5e5; border-radius: 4px; }
+
+.tooltip-arrow { position: absolute; width: 0; height: 0; border-color: transparent; border-style: solid; }
+
+.tooltip.top .tooltip-arrow { bottom: 0; left: 50%; border-top-color:#e5e5e5; border-width: 5px 5px 0; }
+html.ltr .tooltip.top .tooltip-arrow { margin-left: -5px; }
+html.rtl .tooltip.top .tooltip-arrow { margin-right: -5px; }
+
+.tooltip.top-left .tooltip-arrow { bottom: 0; left: 5px; border-top-color:#e5e5e5; border-width: 5px 5px 0; }
+
+.tooltip.top-right .tooltip-arrow { right: 5px; bottom: 0; border-top-color:#e5e5e5; border-width: 5px 5px 0; }
+
+.tooltip.right .tooltip-arrow { top: 50%; left: 0; margin-top: -5px; border-right-color:#e5e5e5; border-width: 5px 5px 5px 0; }
+
+.tooltip.left .tooltip-arrow { top: 50%; right: 0; margin-top: -5px; border-left-color:#e5e5e5; border-width: 5px 0 5px 5px; }
+
+.tooltip.bottom .tooltip-arrow { top: 0; left: 50%; border-bottom-color:#e5e5e5; border-width: 0 5px 5px; }
+html.ltr .tooltip.bottom .tooltip-arrow { margin-left: -5px; }
+html.rtl .tooltip.bottom .tooltip-arrow { margin-right: -5px; }
+
+.tooltip.bottom-left .tooltip-arrow { top: 0; left: 5px; border-bottom-color:#e5e5e5; border-width: 0 5px 5px; }
+
+.tooltip.bottom-right .tooltip-arrow { top: 0; right: 5px; border-bottom-color:#e5e5e5; border-width: 0 5px 5px; }
+
+.popover { position: absolute; top: 0; left: 0; z-index: 10222; display: none; padding: 1px; text-align: left; white-space: normal; background-color:#FFF; border: 1px solid #e5e5e5; border: 1px solid #e5e5e5; background-clip: padding-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.rtl .popover {text-align:right;} /*20140701 RTL align*/
+.popover.showOnly {
+	z-index: 890;
+}
+.popover.lightbox { z-index: 9999; }
+
+.popover.top { margin-top: -10px; }
+
+html.ltr .popover.right { margin-left: 10px; }
+html.rtl .popover.right { margin-right: 10px; }
+
+.popover.bottom { margin-top: 10px; }
+
+html.ltr .popover.left { margin-left: -10px; }
+html.rtl .popover.left { margin-right: -10px; }
+
+.popover-title { padding: 8px 14px; margin: 0; font-size: 14px; font-weight: normal; line-height: 18px; background-color:#f7f7f7; border-bottom: 1px solid #ebebeb; border-radius: 5px 5px 0 0; }
+
+.popover-content { padding: 15px 20px 0; }
+
+.popover .arrow, .popover .arrow:after { position: absolute; display: block; width: 0; height: 0; border-color: transparent; border-style: solid; }
+
+.popover .arrow { border-width: 11px; }
+
+.popover .arrow:after { border-width: 14px; content: ""; }
+
+.popover.top .arrow { bottom: -11px; left: 50%; border-top-color:#e5e5e5; border-top-color:#e5e5e5; border-bottom-width: 0; }
+html.ltr .popover.top .arrow { margin-left: -11px; }
+html.rtl .popover.top .arrow { margin-right: -11px; }
+
+.popover.top .arrow:after { bottom: 1px; border-top-color:#FFF; border-bottom-width: 0; content: "  "; }
+html.ltr .popover.top .arrow:after { margin-left: -14px; }
+html.rtl .popover.top .arrow:after { margin-right: -14px; }
+
+.popover.right .arrow { top: 50%; left: -11px; margin-top: -11px; border-right-color:#e5e5e5; border-right-color:#e5e5e5; border-left-width: 0; }
+
+.popover.right .arrow:after { bottom: -10px; left: 1px; border-right-color:#FFF; border-left-width: 0; content: " "; }
+
+.popover.bottom .arrow { top: -11px; left: 50%; border-bottom-color:#e5e5e5; border-bottom-color:#e5e5e5; border-top-width: 0; }
+html.ltr .popover.bottom .arrow { margin-left: -11px; }
+html.rtl .popover.bottom .arrow { margin-right: -11px; }
+
+.popover.bottom .arrow:after { top: 2px; border-bottom-color:#FFF; border-top-width: 0; content: " "; }
+html.ltr .popover.bottom .arrow:after { margin-left: -14px; }
+html.rtl .popover.bottom .arrow:after { margin-right: -14px; }
+
+.popover.left .arrow { top: 50%; right: -11px; margin-top: -11px; border-left-color:#e5e5e5; border-left-color:#e5e5e5; border-right-width: 0; }
+
+.popover.left .arrow:after { right: 1px; bottom: -10px; border-left-color:#FFF; border-right-width: 0; content: " "; }
+
+@media (min-width: 80.063em) { .popover .arrow { border-width: 12px; }
+  .popover .arrow:after { border-width: 18px; }
+  .popover.bottom .arrow { top: -12px; }
+  html.ltr .popover.bottom .arrow { margin-left: -11px; }
+  html.rtl .popover.bottom .arrow { margin-right: -11px; }
+  .popover.bottom .arrow:after { top: 2px; }
+  html.ltr .popover.bottom .arrow:after { margin-left: -18px; }
+  html.rtl .popover.bottom .arrow:after { margin-right: -18px !important; }
+  .popover.top .arrow { bottom: -12px; }
+  html.ltr .popover.top .arrow { margin-left: -11px; }
+  html.rtl .popover.top .arrow { margin-right: -11px; }
+  .popover.top .arrow:after { bottom: 2px; }
+  html.ltr .popover.top .arrow:after { margin-left: -18px; }
+  html.rtl .popover.top .arrow:after { margin-right: -18px; }
+  .popover.right .arrow { top: 50%; left: -12px; margin-top: -12px; }
+  .popover.right .arrow:after { bottom: -18px; left: 2px; }
+  .popover.left .arrow { top: 50%; right: -12px; margin-top: -12px; }
+  .popover.left .arrow:after { right: 2px; bottom: -18px; } }
+.alert-notification { padding: 15px 21px; font-family: 'SamsungIFBd', Arial, sans-serif; font-weight: normal; font-size: 16px; font-size: 1rem; }
+@media (min-width: 48em) { .alert-notification { font-size: 18px; font-size: 1.125rem; } }
+.alert-notification p { line-height: 1; }
+.alert-notification.error { background:#e10c32;  color: white; }
+.alert-notification span { font-size: 24px; font-size: 1.5rem; margin: -3px 2px 0 0; }
+html.ltr .alert-notification span { float: left; }
+html.rtl .alert-notification span { float: right; }
+
+/* Skrim for Popovers with lightbox: true */
+.lightbox-skrim { position: fixed; top: 0; left: 0; background:#000; width: 100%; height: 100%; z-index:1021; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=66); opacity: 0.66; }
+
+
+
+
+/* b2c font reset */
+.b2c #open-notification .close:before { font-family: 'samsungIcon'; font-size: 39px; font-size: 2.4375rem;}
+.b2c #open-notification h3 { font-family: 'SamsungIFRg', Arial, sans-serif; font-weight: normal; font-size: 24px; font-size: 1.5rem;}
+@media (min-width: 50.063em) { 
+  .b2c #open-notification h3 { font-size: 36px; font-size: 2.25rem; } 
+}
+.b2c #open-notification p { font-family: 'SamsungIFRg', Arial, sans-serif; font-weight: normal; font-size: 13px; font-size: 0.8125rem;}
+@media (min-width: 50.063em) { 
+  .b2c #open-notification p { font-size: 20px; font-size: 1.25rem; } 
+}
+
+.b2c .tooltip { font-size: 12px; line-height: 1.4;}
+.b2c .popover-title { font-size: 14px; font-weight: normal; line-height: 18px;}
+
+.b2c .alert-notification { font-family: 'SamsungIFBd', Arial, sans-serif; font-weight: normal; font-size: 16px; font-size: 1rem; }
+@media (min-width: 48em) { 
+  .b2c .alert-notification { font-size: 18px; font-size: 1.125rem; } 
+}
+.b2c .alert-notification p { line-height: 1; }
+.b2c .alert-notification span { font-size: 24px; font-size: 1.5rem;}
