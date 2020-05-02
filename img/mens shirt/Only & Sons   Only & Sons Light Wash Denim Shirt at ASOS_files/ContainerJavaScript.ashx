@@ -1,1 +1,0 @@
- if (window.location.search.substring(1).indexOf('istCompanyId') > -1) document.writeln('<SCR' + 'IPT type="text/javascript" src="https://www.ist-track.com/ProcessClickJavaScript.ashx?companyId=6f061ed0-7427-4b6c-bb90-987c0bd08468"></SCR' + 'IPT>');

@@ -1,2 +1,0 @@
-if (!window.OX_ads) { OX_ads = []; }OX_ads.push({ "auid" : "537277057" });
-document.write('<scr'+'ipt src="http://ox-d.pubgears.com/w/1.0/jstag"></scr'+'ipt>');
